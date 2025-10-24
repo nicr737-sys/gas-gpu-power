@@ -24,12 +24,12 @@ const Home = () => {
         
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-              Энерго-контейнеры с газовыми ГПУ для майнинга
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+              <span className="text-gradient">Электроэнергия по УЦП/ГЦП за 3,6 ₽/кВт·ч</span>
             </h1>
             
-            <p className="text-3xl md:text-5xl font-bold mb-8 leading-tight">
-              <span className="text-gradient">Электроэнергия по УЦП/ГЦП за 3,6 ₽/кВт·ч</span>
+            <p className="text-xl md:text-2xl text-foreground/80 mb-8">
+              Энерго-контейнеры с газовыми ГПУ для майнинга
             </p>
             
             <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
