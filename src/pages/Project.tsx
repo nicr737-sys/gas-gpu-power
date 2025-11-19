@@ -24,6 +24,154 @@ const Project = () => {
             и майнинговое оборудование в единую энергоэффективную систему.
           </p>
 
+          {/* Energy Center Parameters */}
+          <section className="mb-16">
+            <h2 className="text-3xl font-bold mb-6">Энергетический центр проекта: Параметры площадки и газовой инфраструктуры</h2>
+            
+            <p className="text-muted-foreground mb-8">
+              Проект реализуется на специально подготовленной промышленной территории с обеспеченными лимитами на газ, 
+              что позволяет развернуть мощную генерацию на базе газопоршневых установок (ГПУ). Ниже приведены фактические 
+              данные из подписанных контрактов.
+            </p>
+
+            <div className="space-y-8">
+              {/* Land Plot */}
+              <Card className="p-6 bg-card border-border shadow-[var(--shadow-card)]">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="p-3 rounded-lg bg-energy/10 w-fit">
+                    <Box className="h-6 w-6 text-energy" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">1. Земельный участок (Базовый актив)</h3>
+                    <p className="text-muted-foreground">
+                      Площадка под размещение энергоцентра находится в долгосрочной аренде с правом последующего выкупа, 
+                      что гарантирует стабильность размещения оборудования.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="pl-14 space-y-3 text-muted-foreground">
+                  <p>
+                    <span className="font-semibold text-foreground">Локация:</span> Республика Марий Эл, 
+                    Медведевский район, пгт. Медведево (промышленная зона).
+                  </p>
+                  <p>
+                    <span className="font-semibold text-foreground">Площадь участка:</span> 16 320 кв. м (1,63 Га) — 
+                    достаточно для размещения масштабного парка ГПУ и вспомогательной инфраструктуры.
+                  </p>
+                  <p>
+                    <span className="font-semibold text-foreground">Категория и назначение:</span> Земли населенных пунктов, 
+                    вид разрешенного использования — для производственных нужд.
+                  </p>
+                  <p>
+                    <span className="font-semibold text-foreground">Юридический статус:</span> Договор аренды заключен 
+                    сроком на 10 лет (до сентября 2035 года).
+                  </p>
+                  <p>
+                    <span className="font-semibold text-foreground">Перспектива собственности:</span> Арендатор имеет 
+                    исключительное право на приобретение участка в собственность после завершения строительства и 
+                    регистрации энергоблока.
+                  </p>
+                  <p>
+                    <span className="font-semibold text-foreground">Стоимость владения:</span> Годовая арендная плата 
+                    зафиксирована на уровне ~2,02 млн руб.
+                  </p>
+                </div>
+              </Card>
+
+              {/* Gas Infrastructure */}
+              <Card className="p-6 bg-card border-border shadow-[var(--shadow-card)]">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="p-3 rounded-lg bg-energy/10 w-fit">
+                    <Wind className="h-6 w-6 text-energy" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">2. Газовая инфраструктура (Энергетический потенциал)</h3>
+                    <p className="text-muted-foreground">
+                      Подписан договор о технологическом присоединении с ООО «Газпром газораспределение Йошкар-Ола», 
+                      обеспечивающий проект необходимым топливом для генерации электроэнергии.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="pl-14 space-y-3 text-muted-foreground">
+                  <div>
+                    <p className="font-semibold text-foreground mb-1">Выделенный объем газа (Лимит): 10 000 куб. м в час.</p>
+                    <p className="ml-4 text-sm">
+                      <span className="font-semibold text-foreground">Для инвестора:</span> Данный объем газа позволяет 
+                      обеспечить работу энергоцентра электрической мощностью порядка 40 МВт (при среднем расходе газа ~0,25 м³/кВт·ч).
+                    </p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground">Параметры подключения:</p>
+                    <p className="ml-4">
+                      Газопровод высокого давления (0,6 МПа), что является оптимальным для промышленных ГПУ и снижает 
+                      затраты на дожимное компрессорное оборудование.
+                    </p>
+                  </div>
+                  <p>
+                    <span className="font-semibold text-foreground">Точка подключения:</span> Граница земельного участка 
+                    (газопровод высокого давления проложен непосредственно к участку).
+                  </p>
+                  <p>
+                    <span className="font-semibold text-foreground">Сроки газификации:</span> Плановый срок выполнения 
+                    мероприятий по подключению и пуску газа — 1,5 года с момента заключения договора (ноябрь 2025 г.), 
+                    то есть ориентировочно к середине 2027 года.
+                  </p>
+                </div>
+              </Card>
+
+              {/* Economics */}
+              <Card className="p-6 bg-card border-border shadow-[var(--shadow-card)]">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="p-3 rounded-lg bg-energy/10 w-fit">
+                    <Gauge className="h-6 w-6 text-energy" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">3. Экономика подключения и тарифы</h3>
+                    <p className="text-muted-foreground">
+                      Проект зафиксировал выгодные условия на вход в энергетическую инфраструктуру.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="pl-14 space-y-3 text-muted-foreground">
+                  <div>
+                    <p className="font-semibold text-foreground mb-1">Стоимость техприсоединения (CAPEX):</p>
+                    <p className="ml-4">
+                      Плата за подключение составляет <span className="font-semibold text-foreground">5 493 150,44 руб.</span> (включая НДС). 
+                      Это крайне низкая стоимость капитальных затрат для заявленной мощности (10 000 м³/час), достигнутая 
+                      благодаря применению стандартизированных тарифных ставок.
+                    </p>
+                  </div>
+                  <p>
+                    <span className="font-semibold text-foreground">Условия оплаты:</span> Рассрочка платежей на период 
+                    строительства (25% сразу, 25% в течение 3 месяцев, 35% в течение года, 15% после подписания акта).
+                  </p>
+                  <div>
+                    <p className="font-semibold text-foreground mb-1">Стоимость потребления (OPEX):</p>
+                    <p className="ml-4">
+                      Договор на техприсоединение фиксирует стоимость доступа к сети. Непосредственная цена газа (тариф за 1000 м³) 
+                      будет определяться отдельным договором поставки газа с региональным поставщиком после ввода объекта в эксплуатацию, 
+                      что дает возможность заключить контракт по регулируемым оптовым ценам для промышленности.
+                    </p>
+                  </div>
+                </div>
+              </Card>
+
+              {/* Investor Summary */}
+              <Card className="p-6 bg-gradient-to-br from-energy/10 to-transparent border-energy/30">
+                <h3 className="text-xl font-bold mb-3 text-energy">Резюме для инвестора</h3>
+                <p className="text-foreground leading-relaxed">
+                  Проект обладает юридически закрепленными правами на земельный актив и, что наиболее важно, 
+                  подтвержденными техническими условиями на огромный объем газа (10 000 м³/час) по высокому давлению. 
+                  Низкая стоимость присоединения (~5,5 млн руб.) существенно повышает рентабельность (ROI) будущего 
+                  энергоцентра по сравнению с проектами, где требуется строительство протяженных газопроводов.
+                </p>
+              </Card>
+            </div>
+          </section>
+
           {/* Container Structure */}
           <section className="mb-16">
             <h2 className="text-3xl font-bold mb-8">Конструкция контейнера</h2>
