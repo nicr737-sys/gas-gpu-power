@@ -27,14 +27,18 @@ const Progress = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Calendar className="w-5 h-5 text-energy" />
-                Хронология развертывания
+                Хронология развертывания (1 этап)
               </CardTitle>
+              <CardDescription className="mt-2">
+                В представленной модели отражен первый этап развертывания — подключение 16 кустов вычислительного оборудования. 
+                Все финансовые расчеты и сроки приведены в рамках этого этапа. В перспективе планируется развертывание до 37 кустов.
+              </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="flex items-start gap-4">
                 <CheckCircle2 className="w-6 h-6 text-energy flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Ноябрь 2025 — Юридический фундамент и Земля</h3>
+                  <h3 className="font-semibold text-lg mb-1">Ноябрь 2025 — Оформление участка и газ</h3>
                   <p className="text-muted-foreground mb-3">
                     Подписаны твердые контракты, обеспечивающие базу проекта.
                   </p>
@@ -50,11 +54,11 @@ const Progress = () => {
                   <div className="w-3 h-3 bg-energy rounded-full animate-pulse" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Январь – Июнь 2026 — Закупка генерации (Capex)</h3>
+                  <h3 className="font-semibold text-lg mb-1">Январь – июнь 2026 — Инвестиционная фаза</h3>
                   <p className="text-muted-foreground mb-3">
-                    Старт финансирования основного производственного актива.
+                    Период активных капитальных вложений и строительства.
                   </p>
-                  <p className="text-sm text-muted-foreground ml-4">
+                  <p className="text-sm text-muted-foreground ml-4 mb-2">
                     <strong>Моторокомплекты:</strong> Начало платежей за поставку энергетического оборудования. Общая сумма инвестиций в агрегаты составляет 320 000 000 руб. Планомерное финансирование гарантирует своевременную отгрузку.
                   </p>
                 </div>
@@ -65,7 +69,7 @@ const Progress = () => {
                   <div className="w-3 h-3 bg-energy rounded-full animate-pulse" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Март – Май 2026 — Подготовка периметра и сетей</h3>
+                  <h3 className="font-semibold text-lg mb-1">Март – май 2026 — Подготовка периметра и сетей</h3>
                   <p className="text-muted-foreground mb-3">
                     Активная фаза работ на площадке.
                   </p>
@@ -81,7 +85,7 @@ const Progress = () => {
                   <div className="w-3 h-3 bg-energy rounded-full animate-pulse" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Июнь – Июль 2026 — СМР и Газовая обвязка</h3>
+                  <h3 className="font-semibold text-lg mb-1">Июнь – июль 2026 — СМР и газовая обвязка</h3>
                   <p className="text-muted-foreground mb-3">
                     Самый ответственный технический этап строительства.
                   </p>
@@ -93,30 +97,19 @@ const Progress = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-6 h-6 flex-shrink-0 mt-1 border-2 border-energy rounded-full flex items-center justify-center">
-                  <div className="w-3 h-3 bg-energy rounded-full animate-pulse" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-lg mb-1">Август 2026 — Безопасность и Связь</h3>
-                  <p className="text-muted-foreground mb-3">
-                    Финализация объекта перед пусконаладкой.
-                  </p>
-                  <ul className="space-y-2 text-sm text-muted-foreground ml-4">
-                    <li><strong>IT и охрана:</strong> Развертывание системы видеонаблюдения, подключение высокоскоростного интернета и установка охранных комплексов (тревожная кнопка).</li>
-                    <li><strong>Готовность:</strong> Завершение всех капитальных оплат и строительных работ по графику.</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
                 <div className="w-6 h-6 flex-shrink-0 mt-1 bg-gradient-to-br from-energy to-primary rounded-full flex items-center justify-center">
                   <CheckCircle2 className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Конец 2026 — Пусконаладка и Старт</h3>
-                  <p className="text-muted-foreground">
-                    Интеграция моторокомплектов в систему, пробные пуски и выход на проектную мощность генерации.
+                  <h3 className="font-semibold text-lg mb-1">Июль 2026 — Эксплуатационная фаза</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Начало коммерческой эксплуатации энергоцентра.
                   </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground ml-4">
+                    <li><strong>Безопасность и связь:</strong> Развертывание системы видеонаблюдения, подключение высокоскоростного интернета и установка охранных комплексов (тревожная кнопка).</li>
+                    <li><strong>Пусконаладка:</strong> Интеграция моторокомплектов в систему, пробные пуски и выход на проектную мощность генерации.</li>
+                    <li><strong>Готовность:</strong> Завершение всех капитальных оплат и строительных работ. Старт генерации электроэнергии для обеспечения работы 16 кустов вычислительного оборудования.</li>
+                  </ul>
                 </div>
               </div>
             </CardContent>
