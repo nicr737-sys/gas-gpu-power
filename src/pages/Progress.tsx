@@ -125,121 +125,110 @@ const Progress = () => {
           </div>
         </div>
 
-        {/* Photo Gallery */}
+        {/* Video Section */}
         <div className="space-y-8">
-          <h2 className="text-3xl font-bold text-center mb-8">Фотоматериалы с объекта</h2>
-
-          {/* Main warehouse photo */}
-          <Card className="card-elevated overflow-hidden">
-            <CardHeader>
-              <CardTitle>Общий вид производственного помещения</CardTitle>
-              <CardDescription>
-                Промышленное здание под размещение вычислительного парка с системой вентиляции
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <img 
-                src={warehouseImg} 
-                alt="Общий вид склада с оборудованием" 
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </CardContent>
-          </Card>
-
-          {/* Detailed photos grid */}
-          <div className="grid md:grid-cols-2 gap-6">
+          <h2 className="text-3xl font-bold text-center mb-8">Видеоматериалы с объекта</h2>
+          
+          <div className="grid md:grid-cols-3 gap-6">
             <Card className="card-hover overflow-hidden">
               <CardHeader>
-                <CardTitle>Стеллажи с оборудованием</CardTitle>
+                <CardTitle>Обзор помещения</CardTitle>
                 <CardDescription>
-                  Организация размещения устройств с оптимальным охлаждением
+                  Видеообзор производственного пространства
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <img 
-                  src={rack1Img} 
-                  alt="Стеллаж с вычислительным оборудованием" 
+                <video 
+                  controls 
                   className="w-full h-auto rounded-lg shadow-lg"
-                />
+                  preload="metadata"
+                >
+                  <source src={video1} type="video/mp4" />
+                  Ваш браузер не поддерживает воспроизведение видео.
+                </video>
               </CardContent>
             </Card>
 
             <Card className="card-hover overflow-hidden">
               <CardHeader>
-                <CardTitle>Детальный вид монтажа</CardTitle>
+                <CardTitle>Размещение оборудования</CardTitle>
                 <CardDescription>
-                  Кабельная инфраструктура и система охлаждения в работе
+                  Процесс установки вычислительных устройств
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <img 
-                  src={rack2Img} 
-                  alt="Детальный вид оборудования на стеллажах" 
+                <video 
+                  controls 
                   className="w-full h-auto rounded-lg shadow-lg"
-                />
+                  preload="metadata"
+                >
+                  <source src={video2} type="video/mp4" />
+                  Ваш браузер не поддерживает воспроизведение видео.
+                </video>
+              </CardContent>
+            </Card>
+
+            <Card className="card-hover overflow-hidden">
+              <CardHeader>
+                <CardTitle>Инфраструктура объекта</CardTitle>
+                <CardDescription>
+                  Системы охлаждения и кабельные трассы
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <video 
+                  controls 
+                  className="w-full h-auto rounded-lg shadow-lg"
+                  preload="metadata"
+                >
+                  <source src={video3} type="video/mp4" />
+                  Ваш браузер не поддерживает воспроизведение видео.
+                </video>
               </CardContent>
             </Card>
           </div>
 
-          {/* Video Section */}
+          {/* Photo Gallery */}
           <div className="mt-12">
-            <h2 className="text-3xl font-bold text-center mb-8">Видеоматериалы с объекта</h2>
+            <h2 className="text-3xl font-bold text-center mb-8">Фотоматериалы с объекта</h2>
             
             <div className="grid md:grid-cols-3 gap-6">
               <Card className="card-hover overflow-hidden">
-                <CardHeader>
-                  <CardTitle>Обзор помещения</CardTitle>
-                  <CardDescription>
-                    Видеообзор производственного пространства
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <video 
-                    controls 
-                    className="w-full h-auto rounded-lg shadow-lg"
-                    preload="metadata"
-                  >
-                    <source src={video1} type="video/mp4" />
-                    Ваш браузер не поддерживает воспроизведение видео.
-                  </video>
+                <CardContent className="p-4">
+                  <img 
+                    src={warehouseImg} 
+                    alt="Общий вид производственного помещения" 
+                    className="w-full h-48 object-cover rounded-lg"
+                  />
+                  <p className="text-sm text-muted-foreground mt-2 text-center">
+                    Производственное помещение
+                  </p>
                 </CardContent>
               </Card>
 
               <Card className="card-hover overflow-hidden">
-                <CardHeader>
-                  <CardTitle>Размещение оборудования</CardTitle>
-                  <CardDescription>
-                    Процесс установки вычислительных устройств
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <video 
-                    controls 
-                    className="w-full h-auto rounded-lg shadow-lg"
-                    preload="metadata"
-                  >
-                    <source src={video2} type="video/mp4" />
-                    Ваш браузер не поддерживает воспроизведение видео.
-                  </video>
+                <CardContent className="p-4">
+                  <img 
+                    src={rack1Img} 
+                    alt="Стеллажи с оборудованием" 
+                    className="w-full h-48 object-cover rounded-lg"
+                  />
+                  <p className="text-sm text-muted-foreground mt-2 text-center">
+                    Стеллажи с оборудованием
+                  </p>
                 </CardContent>
               </Card>
 
               <Card className="card-hover overflow-hidden">
-                <CardHeader>
-                  <CardTitle>Инфраструктура объекта</CardTitle>
-                  <CardDescription>
-                    Системы охлаждения и кабельные трассы
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <video 
-                    controls 
-                    className="w-full h-auto rounded-lg shadow-lg"
-                    preload="metadata"
-                  >
-                    <source src={video3} type="video/mp4" />
-                    Ваш браузер не поддерживает воспроизведение видео.
-                  </video>
+                <CardContent className="p-4">
+                  <img 
+                    src={rack2Img} 
+                    alt="Детальный вид монтажа" 
+                    className="w-full h-48 object-cover rounded-lg"
+                  />
+                  <p className="text-sm text-muted-foreground mt-2 text-center">
+                    Детальный вид монтажа
+                  </p>
                 </CardContent>
               </Card>
             </div>
