@@ -34,7 +34,7 @@ const Progress = () => {
               <div className="flex items-start gap-4">
                 <CheckCircle2 className="w-6 h-6 text-energy flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">✅ Ноябрь 2025 — Юридический фундамент и Земля</h3>
+                  <h3 className="font-semibold text-lg mb-1">Ноябрь 2025 — Юридический фундамент и Земля</h3>
                   <p className="text-muted-foreground mb-3">
                     Подписаны твердые контракты, обеспечивающие базу проекта.
                   </p>
@@ -50,12 +50,12 @@ const Progress = () => {
                   <div className="w-3 h-3 bg-energy rounded-full animate-pulse" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">⏳ Январь – Июнь 2026 — Закупка генерации (Capex)</h3>
+                  <h3 className="font-semibold text-lg mb-1">Январь – Июнь 2026 — Закупка генерации (Capex)</h3>
                   <p className="text-muted-foreground mb-3">
                     Старт финансирования основного производственного актива.
                   </p>
                   <p className="text-sm text-muted-foreground ml-4">
-                    <strong>Моторокомплекты:</strong> Начало платежей за поставку энергетического оборудования. Общая сумма инвестиций в агрегаты составляет 320 000 000 руб. Планомерное финансирование (по 17% ежемесячно) гарантирует своевременную отгрузку.
+                    <strong>Моторокомплекты:</strong> Начало платежей за поставку энергетического оборудования. Общая сумма инвестиций в агрегаты составляет 320 000 000 руб. Планомерное финансирование гарантирует своевременную отгрузку.
                   </p>
                 </div>
               </div>
@@ -65,7 +65,7 @@ const Progress = () => {
                   <div className="w-3 h-3 bg-energy rounded-full animate-pulse" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">⏳ Март – Май 2026 — Подготовка периметра и сетей</h3>
+                  <h3 className="font-semibold text-lg mb-1">Март – Май 2026 — Подготовка периметра и сетей</h3>
                   <p className="text-muted-foreground mb-3">
                     Активная фаза работ на площадке.
                   </p>
@@ -81,7 +81,7 @@ const Progress = () => {
                   <div className="w-3 h-3 bg-energy rounded-full animate-pulse" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">⏳ Июнь – Июль 2026 — СМР и Газовая обвязка</h3>
+                  <h3 className="font-semibold text-lg mb-1">Июнь – Июль 2026 — СМР и Газовая обвязка</h3>
                   <p className="text-muted-foreground mb-3">
                     Самый ответственный технический этап строительства.
                   </p>
@@ -97,7 +97,7 @@ const Progress = () => {
                   <div className="w-3 h-3 bg-energy rounded-full animate-pulse" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">⏳ Август 2026 — Безопасность и Связь</h3>
+                  <h3 className="font-semibold text-lg mb-1">Август 2026 — Безопасность и Связь</h3>
                   <p className="text-muted-foreground mb-3">
                     Финализация объекта перед пусконаладкой.
                   </p>
@@ -113,7 +113,7 @@ const Progress = () => {
                   <CheckCircle2 className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">🎯 Конец 2026 — Пусконаладка и Старт</h3>
+                  <h3 className="font-semibold text-lg mb-1">Конец 2026 — Пусконаладка и Старт</h3>
                   <p className="text-muted-foreground">
                     Интеграция моторокомплектов в систему, пробные пуски и выход на проектную мощность генерации.
                   </p>
