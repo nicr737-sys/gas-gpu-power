@@ -2,6 +2,9 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import warehouseImg from "@/assets/progress-warehouse.jpg";
 import rack1Img from "@/assets/progress-rack-1.jpg";
 import rack2Img from "@/assets/progress-rack-2.jpg";
+import video1 from "@/assets/progress-video-1.mp4";
+import video2 from "@/assets/progress-video-2.mp4";
+import video3 from "@/assets/progress-video-3.mp4";
 import { CheckCircle2, Calendar, MapPin } from "lucide-react";
 
 const Progress = () => {
@@ -176,6 +179,70 @@ const Progress = () => {
                 />
               </CardContent>
             </Card>
+          </div>
+
+          {/* Video Section */}
+          <div className="mt-12">
+            <h2 className="text-3xl font-bold text-center mb-8">Видеоматериалы с объекта</h2>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="card-hover overflow-hidden">
+                <CardHeader>
+                  <CardTitle>Обзор помещения</CardTitle>
+                  <CardDescription>
+                    Видеообзор производственного пространства
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <video 
+                    controls 
+                    className="w-full h-auto rounded-lg shadow-lg"
+                    preload="metadata"
+                  >
+                    <source src={video1} type="video/mp4" />
+                    Ваш браузер не поддерживает воспроизведение видео.
+                  </video>
+                </CardContent>
+              </Card>
+
+              <Card className="card-hover overflow-hidden">
+                <CardHeader>
+                  <CardTitle>Размещение оборудования</CardTitle>
+                  <CardDescription>
+                    Процесс установки вычислительных устройств
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <video 
+                    controls 
+                    className="w-full h-auto rounded-lg shadow-lg"
+                    preload="metadata"
+                  >
+                    <source src={video2} type="video/mp4" />
+                    Ваш браузер не поддерживает воспроизведение видео.
+                  </video>
+                </CardContent>
+              </Card>
+
+              <Card className="card-hover overflow-hidden">
+                <CardHeader>
+                  <CardTitle>Инфраструктура объекта</CardTitle>
+                  <CardDescription>
+                    Системы охлаждения и кабельные трассы
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <video 
+                    controls 
+                    className="w-full h-auto rounded-lg shadow-lg"
+                    preload="metadata"
+                  >
+                    <source src={video3} type="video/mp4" />
+                    Ваш браузер не поддерживает воспроизведение видео.
+                  </video>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
 
