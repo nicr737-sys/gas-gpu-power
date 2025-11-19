@@ -34,45 +34,88 @@ const Progress = () => {
               <div className="flex items-start gap-4">
                 <CheckCircle2 className="w-6 h-6 text-energy flex-shrink-0 mt-1" />
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Ноябрь 2024 - Подготовка площадки</h3>
-                  <p className="text-muted-foreground">
-                    Завершена подготовка промышленной территории в Медведевском районе (1,63 Га). 
-                    Оформлен долгосрочный договор аренды земельного участка до сентября 2035 года.
+                  <h3 className="font-semibold text-lg mb-1">✅ Ноябрь 2025 — Юридический фундамент и Земля</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Подписаны твердые контракты, обеспечивающие базу проекта.
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground ml-4">
+                    <li><strong>Земля:</strong> Оформлен договор долгосрочной аренды (до 2035 года) промышленного участка 1,63 Га в пгт. Медведево с правом выкупа.</li>
+                    <li><strong>Газ (ТУ):</strong> Заключен договор с «Газпром газораспределение Йошкар-Ола» на техприсоединение (5,5 млн руб.). Зафиксирован лимит газа 10 000 м³/час.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-6 h-6 flex-shrink-0 mt-1 border-2 border-energy rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 bg-energy rounded-full animate-pulse" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-1">⏳ Январь – Июнь 2026 — Закупка генерации (Capex)</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Старт финансирования основного производственного актива.
+                  </p>
+                  <p className="text-sm text-muted-foreground ml-4">
+                    <strong>Моторокомплекты:</strong> Начало платежей за поставку энергетического оборудования. Общая сумма инвестиций в агрегаты составляет 320 000 000 руб. Планомерное финансирование (по 17% ежемесячно) гарантирует своевременную отгрузку.
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <CheckCircle2 className="w-6 h-6 text-energy flex-shrink-0 mt-1" />
+                <div className="w-6 h-6 flex-shrink-0 mt-1 border-2 border-energy rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 bg-energy rounded-full animate-pulse" />
+                </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Ноябрь 2024 - Закупка оборудования</h3>
-                  <p className="text-muted-foreground">
-                    Приобретено вычислительное оборудование промышленного класса. 
-                    Размещен парк из сотен устройств с общей расчетной мощностью для последующей интеграции 
-                    в энергетический центр на базе ГПУ.
+                  <h3 className="font-semibold text-lg mb-1">⏳ Март – Май 2026 — Подготовка периметра и сетей</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Активная фаза работ на площадке.
                   </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground ml-4">
+                    <li><strong>Благоустройство:</strong> Установка ограждения (2 млн руб.), ворот и планировка территории (2,9 млн руб.).</li>
+                    <li><strong>Внешние сети:</strong> Оплата этапов технологического присоединения газа согласно графику договора.</li>
+                  </ul>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <CheckCircle2 className="w-6 h-6 text-energy flex-shrink-0 mt-1" />
+                <div className="w-6 h-6 flex-shrink-0 mt-1 border-2 border-energy rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 bg-energy rounded-full animate-pulse" />
+                </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">Ноябрь 2025 - Газификация</h3>
-                  <p className="text-muted-foreground">
-                    Подписан договор технологического присоединения с ООО «Газпром газораспределение Йошкар-Ола» 
-                    на выделение 10 000 м³/час газа. Стоимость присоединения составляет 5,5 млн руб. 
-                    Плановый срок завершения подключения - середина 2027 года.
+                  <h3 className="font-semibold text-lg mb-1">⏳ Июнь – Июль 2026 — СМР и Газовая обвязка</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Самый ответственный технический этап строительства.
                   </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground ml-4">
+                    <li><strong>Инженерная инфраструктура:</strong> Монтаж системы газовой обвязки (инвестиции 88 000 000 руб.) — создание "кровеносной системы" энергоцентра.</li>
+                    <li><strong>Здания и сооружения:</strong> Возведение складских помещений, бытовых корпусов для персонала и обслуживания оборудования.</li>
+                  </ul>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 opacity-60">
-                <div className="w-6 h-6 flex-shrink-0 mt-1 border-2 border-muted-foreground/50 rounded-full" />
+              <div className="flex items-start gap-4">
+                <div className="w-6 h-6 flex-shrink-0 mt-1 border-2 border-energy rounded-full flex items-center justify-center">
+                  <div className="w-3 h-3 bg-energy rounded-full animate-pulse" />
+                </div>
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">2027 - Запуск ГПУ</h3>
+                  <h3 className="font-semibold text-lg mb-1">⏳ Август 2026 — Безопасность и Связь</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Финализация объекта перед пусконаладкой.
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground ml-4">
+                    <li><strong>IT и охрана:</strong> Развертывание системы видеонаблюдения, подключение высокоскоростного интернета и установка охранных комплексов (тревожная кнопка).</li>
+                    <li><strong>Готовность:</strong> Завершение всех капитальных оплат и строительных работ по графику.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-6 h-6 flex-shrink-0 mt-1 bg-gradient-to-br from-energy to-primary rounded-full flex items-center justify-center">
+                  <CheckCircle2 className="w-4 h-4 text-white" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-lg mb-1">🎯 Конец 2026 — Пусконаладка и Старт</h3>
                   <p className="text-muted-foreground">
-                    Планируется развертывание газопоршневых установок общей мощностью до 40 МВт. 
-                    Начало промышленной эксплуатации энергетического центра.
+                    Интеграция моторокомплектов в систему, пробные пуски и выход на проектную мощность генерации.
                   </p>
                 </div>
               </div>
