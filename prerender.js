@@ -18,8 +18,13 @@ run({
     '--no-sandbox', 
     '--disable-setuid-sandbox',
     '--disable-dev-shm-usage',
-    '--disable-web-security'
+    '--disable-web-security',
+    '--disable-features=IsolateOrigins,site-per-process'
   ],
+  puppeteerLaunchOptions: {
+    headless: 'new'
+  },
+  skipThirdPartyRequests: true,
   include: [
     '/',
     '/project',
