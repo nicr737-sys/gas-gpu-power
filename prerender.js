@@ -1,4 +1,5 @@
 import { run } from 'react-snap';
+import puppeteer from 'puppeteer';
 
 run({
   source: 'dist',
@@ -12,7 +13,13 @@ run({
     removeStyleLinkTypeAttributes: true,
     useShortDoctype: true
   },
-  puppeteerArgs: ['--no-sandbox', '--disable-setuid-sandbox'],
+  puppeteer: puppeteer,
+  puppeteerArgs: [
+    '--no-sandbox', 
+    '--disable-setuid-sandbox',
+    '--disable-dev-shm-usage',
+    '--disable-web-security'
+  ],
   include: [
     '/',
     '/project',
