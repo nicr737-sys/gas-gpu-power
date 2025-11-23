@@ -25,7 +25,7 @@ const Home = () => {
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Электроэнергия по УЦП/ГЦП <span className="text-gradient">за 3,6 ₽/кВт·ч</span>
+              Электроэнергия по ГЦП <span className="text-gradient">за 3,85 ₽/кВт·ч</span>
             </h1>
             
             <p className="text-xl md:text-2xl text-foreground/80 mb-8">
@@ -76,7 +76,7 @@ const Home = () => {
               </div>
               <h3 className="text-xl font-bold mb-3">Себестоимость и предсказуемость</h3>
               <p className="text-muted-foreground">
-                Фиксированный тариф 3,6 ₽/кВт·ч против рыночных ~5,5 ₽/кВт·ч. Прозрачное ценообразование.
+                Фиксированный тариф 3,85 ₽/кВт·ч против рыночных ~5,5 ₽/кВт·ч. Прозрачное ценообразование.
               </p>
             </Card>
 
@@ -124,7 +124,7 @@ const Home = () => {
                 <div className="w-16 h-16 rounded-full bg-energy/10 border-2 border-energy flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-energy">
                   1
                 </div>
-                <h3 className="text-xl font-bold mb-3">Выпуск УЦП/ГЦП</h3>
+                <h3 className="text-xl font-bold mb-3">Выпуск ГЦП</h3>
                 <p className="text-muted-foreground">
                   Цифровые права на электроэнергию выпускаются через ОИС в соответствии с ФЗ-259
                 </p>
@@ -136,7 +136,7 @@ const Home = () => {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Оплата и поставка</h3>
                 <p className="text-muted-foreground">
-                  Приобретение токенов и получение кВт·ч по фиксированной цене 3,6 ₽/кВт·ч
+                  Приобретение токенов и получение кВт·ч по фиксированной цене 3,85 ₽/кВт·ч
                 </p>
               </div>
 
@@ -210,7 +210,7 @@ const Home = () => {
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               Оставьте заявку, и мы свяжемся с вами для обсуждения условий поставки 
-              электроэнергии по УЦП/ГЦП или предзаказа контейнера.
+              электроэнергии по ГЦП или предзаказа контейнера.
             </p>
             <Dialog>
               <DialogTrigger asChild>

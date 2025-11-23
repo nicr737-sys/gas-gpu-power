@@ -10,12 +10,12 @@ const Terms = () => {
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl font-bold mb-6">
-            Условия выпуска <span className="text-gradient">УЦП/ГЦП</span>
+            Условия выпуска <span className="text-gradient">ГЦП</span>
           </h1>
           
           <p className="text-xl text-muted-foreground mb-12">
             Цифровые финансовые активы, предоставляющие право на получение электроэнергии 
-            по фиксированному тарифу 3,6 ₽/кВт·ч.
+            по фиксированному тарифу 3,85 ₽/кВт·ч.
           </p>
 
           {/* Models */}
@@ -31,7 +31,7 @@ const Terms = () => {
                 <h4 className="text-lg font-semibold text-energy mb-4">Утилитарные цифровые права</h4>
                 <p className="text-muted-foreground mb-4">
                   УЦП предоставляют право на получение определённого количества электроэнергии 
-                  (кВт·ч) по фиксированной цене 3,6 ₽/кВт·ч.
+                  (кВт·ч) по фиксированной цене 3,85 ₽/кВт·ч.
                 </p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex items-start gap-2">
@@ -40,7 +40,7 @@ const Terms = () => {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-energy mt-1">•</span>
-                    Фиксированная цена 3,6 ₽/кВт·ч
+                    Фиксированная цена 3,85 ₽/кВт·ч
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-energy mt-1">•</span>
@@ -111,9 +111,9 @@ const Terms = () => {
                 },
                 {
                   step: 3,
-                  title: "Покупка цифровых прав",
-                  description: "Приобретение УЦП/ГЦП по установленной цене через интерфейс оператора или банка-оператора"
-                },
+                    title: "Покупка цифровых прав",
+                    description: "Приобретение ГЦП по установленной цене через интерфейс оператора или банка-оператора"
+                  },
                 {
                   step: 4,
                   title: "Поставка / Расчёт",
@@ -166,7 +166,7 @@ const Terms = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <div className="text-sm text-muted-foreground mb-1">Цена за кВт·ч</div>
-                    <div className="text-2xl font-bold text-energy">3,6 ₽</div>
+                    <div className="text-2xl font-bold text-energy">3,85 ₽</div>
                   </div>
 
                   <div>
@@ -221,7 +221,7 @@ const Terms = () => {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
-                        Цифровые финансовые активы (УЦП/ГЦП) <strong>не являются банковским вкладом</strong> 
+                        Цифровые финансовые активы (ГЦП) <strong>не являются банковским вкладом</strong> 
                         и <strong>не застрахованы</strong> по ФЗ-177 «О страховании вкладов физических лиц в банках РФ»
                       </li>
                       <li className="flex items-start gap-2">
@@ -263,7 +263,7 @@ const Terms = () => {
                 Готовы приобрести цифровые права?
               </h2>
               <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-                Оставьте заявку, и мы проконсультируем вас по условиям выпуска УЦП/ГЦП 
+                Оставьте заявку, и мы проконсультируем вас по условиям выпуска ГЦП 
                 и процессу приобретения.
               </p>
               <Dialog>

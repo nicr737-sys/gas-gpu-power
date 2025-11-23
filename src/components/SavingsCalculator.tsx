@@ -10,7 +10,7 @@ export const SavingsCalculator = () => {
   const [daysPerMonth, setDaysPerMonth] = useState(30);
 
   const marketPrice = 5.5;
-  const ucpPrice = 3.6;
+  const ucpPrice = 3.85;
 
   const kWhPerMonth = power * hoursPerDay * daysPerMonth;
   const marketCost = kWhPerMonth * marketPrice;
@@ -74,7 +74,7 @@ export const SavingsCalculator = () => {
         </div>
 
         <div className="flex justify-between text-sm">
-          <span className="text-muted-foreground">По УЦП/ГЦП (3,6 ₽):</span>
+          <span className="text-muted-foreground">По ГЦП (3,85 ₽):</span>
           <span className="font-semibold text-energy">{ucpCost.toLocaleString()} ₽</span>
         </div>
 
