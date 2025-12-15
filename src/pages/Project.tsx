@@ -255,11 +255,9 @@ const Project = () => {
                 </ul>
               </Card>
             </div>
-          </section>
 
-          {/* Technical Specifications */}
-          <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">Технические характеристики ГПУ-250</h2>
+            {/* Technical Specifications - GPU-250 */}
+            <h3 className="text-2xl font-bold mt-10 mb-6">Паспорт ГПУ-250</h3>
             
             <Card className="p-8 bg-card border-border shadow-[var(--shadow-card)]">
               <div className="space-y-6">
