@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { 
   Box, 
   Cpu, 
@@ -7,7 +8,8 @@ import {
   Zap,
   ThermometerSnowflake,
   Volume2,
-  Settings
+  Settings,
+  ExternalLink
 } from "lucide-react";
 
 const Project = () => {
@@ -42,7 +44,7 @@ const Project = () => {
                     <Box className="h-6 w-6 text-energy" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">1. Земельный участок (Базовый актив)</h3>
+                    <h3 className="text-xl font-bold mb-2">1. Земельный участок</h3>
                     <p className="text-muted-foreground">
                       Площадка под размещение энергоцентра находится в долгосрочной аренде с правом последующего выкупа, 
                       что гарантирует стабильность размещения оборудования.
@@ -76,6 +78,14 @@ const Project = () => {
                     <span className="font-semibold text-foreground">Стоимость владения:</span> Годовая арендная плата 
                     зафиксирована на уровне ~2,02 млн руб.
                   </p>
+                  <div className="mt-4">
+                    <Button asChild variant="outline" size="sm">
+                      <a href="/!DOC/DOGOVOR-01-2A25/" target="_blank" rel="noopener noreferrer">
+                        Посмотреть договор
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </Card>
 
@@ -86,7 +96,7 @@ const Project = () => {
                     <Wind className="h-6 w-6 text-energy" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2">2. Газовая инфраструктура (Энергетический потенциал)</h3>
+                    <h3 className="text-xl font-bold mb-2">2. Газовая инфраструктура</h3>
                     <p className="text-muted-foreground">
                       Подписан договор о технологическом присоединении с ООО «Газпром газораспределение Йошкар-Ола», 
                       обеспечивающий проект необходимым топливом для генерации электроэнергии.
@@ -118,6 +128,14 @@ const Project = () => {
                     мероприятий по подключению и пуску газа — 1,5 года с момента заключения договора (ноябрь 2025 г.), 
                     то есть ориентировочно к середине 2027 года.
                   </p>
+                  <div className="mt-4">
+                    <Button asChild variant="outline" size="sm">
+                      <a href="/!DOC/Dogovor-821-2025/" target="_blank" rel="noopener noreferrer">
+                        Посмотреть договор
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </a>
+                    </Button>
+                  </div>
                 </div>
               </Card>
 
