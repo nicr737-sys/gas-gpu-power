@@ -18,79 +18,37 @@ const Terms = () => {
             по фиксированному тарифу 3,85 ₽/кВт·ч.
           </p>
 
-          {/* Models */}
+          {/* GCP Model */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">Модели цифровых прав</h2>
+            <h2 className="text-3xl font-bold mb-8">Гибридные цифровые права (ГЦП)</h2>
             
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <Card className="p-6 bg-card border-border shadow-[var(--shadow-card)]">
-                <div className="p-3 rounded-lg bg-energy/10 w-fit mb-4">
-                  <FileText className="h-8 w-8 text-energy" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3">Модель 1: УЦП</h3>
-                <h4 className="text-lg font-semibold text-energy mb-4">Утилитарные цифровые права</h4>
-                <p className="text-muted-foreground mb-4">
-                  УЦП предоставляют право на получение определённого количества электроэнергии 
-                  (кВт·ч) по фиксированной цене 3,85 ₽/кВт·ч.
-                </p>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="text-energy mt-1">•</span>
-                    Право на поставку кВт·ч по графику
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-energy mt-1">•</span>
-                    Фиксированная цена 3,85 ₽/кВт·ч
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-energy mt-1">•</span>
-                    Поставка от собственных ГПУ
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-energy mt-1">•</span>
-                    Учёт через систему ОИС
-                  </li>
-                </ul>
-              </Card>
-
-              <Card className="p-6 bg-card border-border shadow-[var(--shadow-card)]">
-                <div className="p-3 rounded-lg bg-energy/10 w-fit mb-4">
-                  <FileText className="h-8 w-8 text-energy" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3">Модель 2: ГЦП</h3>
-                <h4 className="text-lg font-semibold text-energy mb-4">Гибридные цифровые права</h4>
-                <p className="text-muted-foreground mb-4">
-                  ГЦП совмещают признаки УЦП и ЦФА, предоставляя дополнительные опции 
-                  использования (денежный расчёт, товар, услуга).
-                </p>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="text-energy mt-1">•</span>
-                    Гибкие сценарии погашения
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-energy mt-1">•</span>
-                    Возможность денежного расчёта
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-energy mt-1">•</span>
-                    Поддержка ОИС (в зависимости от оператора)
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-energy mt-1">•</span>
-                    Расширенные права приобретателя
-                  </li>
-                </ul>
-              </Card>
-            </div>
-
-            <div className="p-4 rounded-lg bg-muted/50 border border-border">
-              <p className="text-sm text-muted-foreground">
-                <strong className="text-foreground">Важно:</strong> Окончательный выбор модели 
-                (УЦП или ГЦП) зависит от возможностей выбранного оператора информационной системы 
-                и согласования условий выпуска.
+            <Card className="p-6 bg-card border-border shadow-[var(--shadow-card)] max-w-xl">
+              <div className="p-3 rounded-lg bg-energy/10 w-fit mb-4">
+                <FileText className="h-8 w-8 text-energy" />
+              </div>
+              <p className="text-muted-foreground mb-4">
+                ГЦП совмещают признаки цифровых финансовых активов, предоставляя гибкие опции 
+                использования (денежный расчёт, товар, услуга).
               </p>
-            </div>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li className="flex items-start gap-2">
+                  <span className="text-energy mt-1">•</span>
+                  Гибкие сценарии погашения
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-energy mt-1">•</span>
+                  Возможность денежного расчёта
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-energy mt-1">•</span>
+                  Поддержка ОИС (в зависимости от оператора)
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-energy mt-1">•</span>
+                  Расширенные права приобретателя
+                </li>
+              </ul>
+            </Card>
           </section>
 
           {/* Acquisition Process */}
