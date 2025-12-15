@@ -9,7 +9,6 @@ const navLinks = [
   { href: "/progress", label: "Реализация" },
   { href: "/terms", label: "Условия выпуска" },
   { href: "/docs", label: "Документы" },
-  { href: "/faq", label: "FAQ" },
   { href: "/news", label: "Новости" },
   { href: "/contact", label: "Контакты" },
 ];
