@@ -12,6 +12,7 @@ import FAQ from "./pages/FAQ";
 import News from "./pages/News";
 import Contact from "./pages/Contact";
 import Progress from "./pages/Progress";
+import DocumentViewer from "./pages/DocumentViewer";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/news" element={<News />} />
             <Route path="/progress" element={<Progress />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/:slug" element={<DocumentViewer />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
