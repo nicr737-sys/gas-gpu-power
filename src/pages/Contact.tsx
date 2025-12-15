@@ -28,7 +28,7 @@ const Contact = () => {
                   </div>
                   <h3 className="font-bold mb-2">Покупка кВт·ч</h3>
                   <p className="text-sm text-muted-foreground">
-                    Приобретение электроэнергии по УЦП/ГЦП
+                    Приобретение электроэнергии по ГЦП
                   </p>
                 </Card>
 
