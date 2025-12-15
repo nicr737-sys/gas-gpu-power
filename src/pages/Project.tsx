@@ -79,7 +79,7 @@ const Project = () => {
                     зафиксирована на уровне ~2,02 млн руб.
                   </p>
                   <div className="mt-4">
-                    <Button asChild variant="outline" size="sm">
+                    <Button asChild size="sm" className="bg-energy text-energy-foreground hover:bg-transparent hover:text-energy hover:border-energy border border-transparent transition-colors">
                       <a href="/!DOC/DOGOVOR-01-2A25/" target="_blank" rel="noopener noreferrer">
                         Посмотреть договор
                         <ExternalLink className="ml-2 h-4 w-4" />
@@ -129,7 +129,7 @@ const Project = () => {
                     то есть ориентировочно к середине 2027 года.
                   </p>
                   <div className="mt-4">
-                    <Button asChild variant="outline" size="sm">
+                    <Button asChild size="sm" className="bg-energy text-energy-foreground hover:bg-transparent hover:text-energy hover:border-energy border border-transparent transition-colors">
                       <a href="/!DOC/Dogovor-821-2025/" target="_blank" rel="noopener noreferrer">
                         Посмотреть договор
                         <ExternalLink className="ml-2 h-4 w-4" />
