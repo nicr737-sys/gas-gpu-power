@@ -1,10 +1,34 @@
 import { Card } from "@/components/ui/card";
 import { LeadForm } from "@/components/LeadForm";
-import { Mail, MessageSquare, FileText } from "lucide-react";
+import { Mail, MessageSquare, FileText, Building2, Phone, Globe } from "lucide-react";
 import { useState } from "react";
 
 const Contact = () => {
   const [showThankYou, setShowThankYou] = useState(false);
+
+  const companyInfo = [
+    { label: "Полное наименование", value: "Общество с ограниченной ответственностью «ЭнергоТех»" },
+    { label: "Сокращенное наименование", value: "ООО «ЭнергоТех»" },
+    { label: "Адрес по ЕГРЮЛ", value: "115230, г. Москва, вн.тер.г. Муниципальный округ Нагорный, проезд Электролитный, д. 1Б" },
+    { label: "Почтовый адрес", value: "424020, Республика Марий Эл, г. Йошкар-Ола, ул. Машиностроителей, д. 8Г, офис 405/1" },
+    { label: "Обособленное подразделение", value: "424020, Республика Марий Эл, г. Йошкар-Ола, ул. Машиностроителей, д. 8Г, офис 405/1" },
+    { label: "Телефон", value: "Офис: +7 (8362) 55-70-80\nБухгалтерия: +7 967 759-10-34" },
+    { label: "E-mail", value: "info@energy-tech.pro (Офис, общие вопросы)\nbuh@energy-tech.pro (Бухгалтерия)" },
+    { label: "URL", value: "www.energy-tech.pro" },
+    { label: "ОГРН", value: "1221200003530" },
+    { label: "ИНН", value: "1200007598" },
+    { label: "КПП", value: "772601001" },
+    { label: "КПП обособленного подразделения", value: "120045001" },
+    { label: "ОКПО", value: "50372646" },
+    { label: "ОКВЭД", value: "33.20 и др." },
+    { label: "ОКТМО", value: "45920000000" },
+    { label: "ОКАТО", value: "45296575000" },
+    { label: "ОКФС", value: "16" },
+    { label: "ОКОПФ", value: "12300" },
+    { label: "Режим налогообложения", value: "ОСН" },
+    { label: "Идентификатор ЭДО", value: "2BEc0c9a007188442e4b52922eaee0f4664" },
+    { label: "Банковские реквизиты", value: "р/с 40702810615920001004\nФИЛИАЛ «ЦЕНТРАЛЬНЫЙ» БАНКА ВТБ (ПАО)\nк/с 30101810145250000411\nБИК 044525411" },
+  ];
 
   return (
     <div className="min-h-screen pt-32 pb-20 px-4">
@@ -20,6 +44,35 @@ const Contact = () => {
                 Оставьте заявку, и мы свяжемся с вами для обсуждения условий поставки 
                 электроэнергии, предзаказа контейнера или партнёрства.
               </p>
+
+              {/* Company Information Section */}
+              <Card className="p-8 bg-card border-border shadow-[var(--shadow-card)] mb-12">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-3 rounded-lg bg-energy/10">
+                    <Building2 className="h-6 w-6 text-energy" />
+                  </div>
+                  <h2 className="text-2xl font-bold">Информация о компании</h2>
+                </div>
+                
+                <h3 className="text-xl font-semibold text-energy mb-6">ООО «ЭнергоТех»</h3>
+                
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <tbody>
+                      {companyInfo.map((item, index) => (
+                        <tr key={index} className="border-b border-border last:border-0">
+                          <td className="py-3 pr-4 font-medium text-muted-foreground whitespace-nowrap align-top w-1/3">
+                            {item.label}
+                          </td>
+                          <td className="py-3 text-foreground whitespace-pre-line">
+                            {item.value}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </Card>
 
               <div className="grid md:grid-cols-3 gap-6 mb-12">
                 <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
