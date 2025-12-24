@@ -64,6 +64,27 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Video Section */}
+      <section className="py-20 px-4 bg-card/30">
+        <div className="container mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12">Состояние объекта 20 декабря 2025 года</h2>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-[var(--shadow-card)]">
+              <iframe 
+                width="100%" 
+                height="100%" 
+                src="https://rutube.ru/play/embed/ad026d5a5ffc1aa2477fb4ac79784bf3/?p=Lm6Yhf3fJDrD_n9r_cGW6A" 
+                style={{ border: 'none' }} 
+                allow="clipboard-write; autoplay" 
+                allowFullScreen
+                className="absolute inset-0"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Advantages */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
