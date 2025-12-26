@@ -45,12 +45,12 @@ const Progress = () => {
           </p>
         </div>
 
-        {/* Production Photos */}
+        {/* Photo Gallery */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Собственное производство майнинг-контейнеров</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Фотоматериалы с объекта</h2>
           
-          <div className="grid md:grid-cols-3 gap-6">
-            {productionPhotos.map((photo, index) => (
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {photos.map((photo, index) => (
               <Card key={index} className="card-hover overflow-hidden">
                 <CardContent className="p-4">
                   <img 
@@ -67,12 +67,12 @@ const Progress = () => {
           </div>
         </div>
 
-        {/* Photo Gallery */}
+        {/* Production Photos */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Фотоматериалы с объекта</h2>
+          <h2 className="text-3xl font-bold text-center mb-8">Собственное производство майнинг-контейнеров</h2>
           
-          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
-            {photos.map((photo, index) => (
+          <div className="grid md:grid-cols-3 gap-6">
+            {productionPhotos.map((photo, index) => (
               <Card key={index} className="card-hover overflow-hidden">
                 <CardContent className="p-4">
                   <img 
