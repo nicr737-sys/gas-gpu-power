@@ -1,13 +1,34 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import progressPhoto1 from "@/assets/progress-photo-1.jpg";
+import progressPhoto2 from "@/assets/progress-photo-2.jpg";
+import progressPhoto3 from "@/assets/progress-photo-3.jpg";
+import progressPhoto4 from "@/assets/progress-photo-4.jpg";
+import progressPhoto5 from "@/assets/progress-photo-5.jpg";
+import progressPhoto6 from "@/assets/progress-photo-6.jpg";
+import progressPhoto7 from "@/assets/progress-photo-7.jpg";
+import progressPhoto8 from "@/assets/progress-photo-8.jpg";
+import progressPhoto9 from "@/assets/progress-photo-9.jpg";
 import warehouseImg from "@/assets/progress-warehouse.jpg";
 import rack1Img from "@/assets/progress-rack-1.jpg";
 import rack2Img from "@/assets/progress-rack-2.jpg";
-import video1 from "@/assets/progress-video-1.mp4";
-import video2 from "@/assets/progress-video-2.mp4";
-import video3 from "@/assets/progress-video-3.mp4";
 import { CheckCircle2, Calendar, MapPin } from "lucide-react";
 
 const Progress = () => {
+  const photos = [
+    { src: progressPhoto1, alt: "Площадка с контейнерами и оборудованием" },
+    { src: progressPhoto2, alt: "Двигатель газопоршневой установки" },
+    { src: progressPhoto3, alt: "Производственный цех" },
+    { src: progressPhoto4, alt: "Стойки с вычислительным оборудованием" },
+    { src: progressPhoto5, alt: "Строительная площадка" },
+    { src: progressPhoto6, alt: "Контейнеры в производственном помещении" },
+    { src: progressPhoto7, alt: "Вычислительное оборудование с панелью управления" },
+    { src: progressPhoto8, alt: "Цех с рабочими станциями" },
+    { src: progressPhoto9, alt: "Модульные контейнеры с газовой обвязкой" },
+    { src: warehouseImg, alt: "Производственное помещение" },
+    { src: rack1Img, alt: "Стеллажи с оборудованием" },
+    { src: rack2Img, alt: "Детальный вид монтажа" },
+  ];
+
   return (
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
@@ -21,113 +42,25 @@ const Progress = () => {
           </p>
         </div>
 
-        {/* Video Section */}
-        <div className="space-y-8 mb-16">
-          <h2 className="text-3xl font-bold text-center mb-8">Видеоматериалы с объекта</h2>
+        {/* Photo Gallery */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Фотоматериалы с объекта</h2>
           
-          <div className="grid md:grid-cols-3 gap-6">
-            <Card className="card-hover overflow-hidden">
-              <CardHeader>
-                <CardTitle>Обзор помещения</CardTitle>
-                <CardDescription>
-                  Видеообзор производственного пространства
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <video 
-                  controls 
-                  className="w-full h-auto rounded-lg shadow-lg"
-                  preload="metadata"
-                >
-                  <source src={video1} type="video/mp4" />
-                  Ваш браузер не поддерживает воспроизведение видео.
-                </video>
-              </CardContent>
-            </Card>
-
-            <Card className="card-hover overflow-hidden">
-              <CardHeader>
-                <CardTitle>Размещение оборудования</CardTitle>
-                <CardDescription>
-                  Процесс установки вычислительных устройств
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <video 
-                  controls 
-                  className="w-full h-auto rounded-lg shadow-lg"
-                  preload="metadata"
-                >
-                  <source src={video2} type="video/mp4" />
-                  Ваш браузер не поддерживает воспроизведение видео.
-                </video>
-              </CardContent>
-            </Card>
-
-            <Card className="card-hover overflow-hidden">
-              <CardHeader>
-                <CardTitle>Инфраструктура объекта</CardTitle>
-                <CardDescription>
-                  Системы охлаждения и кабельные трассы
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <video 
-                  controls 
-                  className="w-full h-auto rounded-lg shadow-lg"
-                  preload="metadata"
-                >
-                  <source src={video3} type="video/mp4" />
-                  Ваш браузер не поддерживает воспроизведение видео.
-                </video>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Photo Gallery */}
-          <div className="mt-12">
-            <h2 className="text-3xl font-bold text-center mb-8">Фотоматериалы с объекта</h2>
-            
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="card-hover overflow-hidden">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {photos.map((photo, index) => (
+              <Card key={index} className="card-hover overflow-hidden">
                 <CardContent className="p-4">
                   <img 
-                    src={warehouseImg} 
-                    alt="Общий вид производственного помещения" 
+                    src={photo.src} 
+                    alt={photo.alt} 
                     className="w-full h-48 object-cover rounded-lg"
                   />
                   <p className="text-sm text-muted-foreground mt-2 text-center">
-                    Производственное помещение
+                    {photo.alt}
                   </p>
                 </CardContent>
               </Card>
-
-              <Card className="card-hover overflow-hidden">
-                <CardContent className="p-4">
-                  <img 
-                    src={rack1Img} 
-                    alt="Стеллажи с оборудованием" 
-                    className="w-full h-48 object-cover rounded-lg"
-                  />
-                  <p className="text-sm text-muted-foreground mt-2 text-center">
-                    Стеллажи с оборудованием
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="card-hover overflow-hidden">
-                <CardContent className="p-4">
-                  <img 
-                    src={rack2Img} 
-                    alt="Детальный вид монтажа" 
-                    className="w-full h-48 object-cover rounded-lg"
-                  />
-                  <p className="text-sm text-muted-foreground mt-2 text-center">
-                    Детальный вид монтажа
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
+            ))}
           </div>
         </div>
 
