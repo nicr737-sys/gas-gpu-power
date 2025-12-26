@@ -24,7 +24,7 @@ const About = () => {
             <span className="text-gradient">О компании</span>
           </h1>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="space-y-8">
             {/* Company Information Section */}
             <Card className="p-8 bg-card border-border shadow-[var(--shadow-card)]">
               <div className="flex items-center gap-3 mb-6">
@@ -55,7 +55,7 @@ const About = () => {
             </Card>
 
             {/* Reports Section */}
-            <Card className="p-8 bg-card border-border shadow-[var(--shadow-card)] h-fit">
+            <Card className="p-8 bg-card border-border shadow-[var(--shadow-card)]">
               <div className="flex items-center gap-3 mb-6">
                 <div className="p-3 rounded-lg bg-energy/10">
                   <FileText className="h-6 w-6 text-energy" />
@@ -63,12 +63,12 @@ const About = () => {
                 <h2 className="text-2xl font-bold">Отчетность</h2>
               </div>
               
-              <div className="space-y-4">
+              <div className="flex flex-wrap gap-4">
                 <a
                   href="/!DOC/Buhgalsterskiy-balans"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center w-full rounded-md text-sm font-medium transition-colors bg-energy text-accent-foreground hover:bg-transparent hover:text-energy hover:border-energy border-2 border-energy h-11 px-8"
+                  className="flex items-center justify-center rounded-md text-sm font-medium transition-colors bg-energy text-accent-foreground hover:bg-transparent hover:text-energy hover:border-energy border-2 border-energy h-11 px-8"
                 >
                   Баланс
                 </a>
@@ -76,7 +76,7 @@ const About = () => {
                   href="/!DOC/Otchet-o-finansovyh-rezultatah"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center w-full rounded-md text-sm font-medium transition-colors bg-energy text-accent-foreground hover:bg-transparent hover:text-energy hover:border-energy border-2 border-energy h-11 px-8"
+                  className="flex items-center justify-center rounded-md text-sm font-medium transition-colors bg-energy text-accent-foreground hover:bg-transparent hover:text-energy hover:border-energy border-2 border-energy h-11 px-8"
                 >
                   Отчет о финансовых результатах
                 </a>
