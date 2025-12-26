@@ -18,7 +18,7 @@ const projectSubLinks = [
 const navLinks = [
   { href: "/", label: "Главная" },
   { href: "/terms", label: "Условия выпуска" },
-  { href: "/news", label: "Новости" },
+  { href: "/about", label: "О компании" },
   { href: "/contact", label: "Контакты" },
 ];
 
@@ -85,13 +85,13 @@ export const Navigation = () => {
               Условия выпуска
             </Link>
             <Link
-              to="/news"
+              to="/about"
               className={cn(
                 "text-sm font-medium transition-colors hover:text-energy",
-                location.pathname === "/news" ? "text-energy" : "text-foreground/80"
+                location.pathname === "/about" ? "text-energy" : "text-foreground/80"
               )}
             >
-              Новости
+              О компании
             </Link>
             <Link
               to="/contact"
@@ -170,14 +170,14 @@ export const Navigation = () => {
               Условия выпуска
             </Link>
             <Link
-              to="/news"
+              to="/about"
               onClick={() => setIsOpen(false)}
               className={cn(
                 "block py-2 text-sm font-medium transition-colors hover:text-energy",
-                location.pathname === "/news" ? "text-energy" : "text-foreground/80"
+                location.pathname === "/about" ? "text-energy" : "text-foreground/80"
               )}
             >
-              Новости
+              О компании
             </Link>
             <Link
               to="/contact"
