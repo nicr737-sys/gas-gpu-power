@@ -1,21 +1,33 @@
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
+const projectSubLinks = [
+  { href: "/project", label: "Описание" },
+  { href: "/progress", label: "Реализация" },
+  { href: "/docs", label: "Документы" },
+];
 
 const navLinks = [
   { href: "/", label: "Главная" },
-  { href: "/project", label: "Проект" },
-  { href: "/progress", label: "Реализация" },
   { href: "/terms", label: "Условия выпуска" },
-  { href: "/docs", label: "Документы" },
   { href: "/news", label: "Новости" },
   { href: "/contact", label: "Контакты" },
 ];
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [projectOpen, setProjectOpen] = useState(false);
   const location = useLocation();
+
+  const isProjectActive = projectSubLinks.some(link => location.pathname === link.href);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-lg">
@@ -27,18 +39,69 @@ export const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className={cn(
-                  "text-sm font-medium transition-colors hover:text-energy",
-                  location.pathname === link.href ? "text-energy" : "text-foreground/80"
-                )}
-              >
-                {link.label}
-              </Link>
-            ))}
+            <Link
+              to="/"
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-energy",
+                location.pathname === "/" ? "text-energy" : "text-foreground/80"
+              )}
+            >
+              Главная
+            </Link>
+
+            {/* Project Dropdown */}
+            <DropdownMenu>
+              <DropdownMenuTrigger className={cn(
+                "flex items-center gap-1 text-sm font-medium transition-colors hover:text-energy outline-none",
+                isProjectActive ? "text-energy" : "text-foreground/80"
+              )}>
+                Проект
+                <ChevronDown className="h-4 w-4" />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="start" className="bg-background border-border">
+                {projectSubLinks.map((link) => (
+                  <DropdownMenuItem key={link.href} asChild>
+                    <Link
+                      to={link.href}
+                      className={cn(
+                        "w-full cursor-pointer",
+                        location.pathname === link.href ? "text-energy" : ""
+                      )}
+                    >
+                      {link.label}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+
+            <Link
+              to="/terms"
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-energy",
+                location.pathname === "/terms" ? "text-energy" : "text-foreground/80"
+              )}
+            >
+              Условия выпуска
+            </Link>
+            <Link
+              to="/news"
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-energy",
+                location.pathname === "/news" ? "text-energy" : "text-foreground/80"
+              )}
+            >
+              Новости
+            </Link>
+            <Link
+              to="/contact"
+              className={cn(
+                "text-sm font-medium transition-colors hover:text-energy",
+                location.pathname === "/contact" ? "text-energy" : "text-foreground/80"
+              )}
+            >
+              Контакты
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -54,19 +117,78 @@ export const Navigation = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden pb-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                onClick={() => setIsOpen(false)}
+            <Link
+              to="/"
+              onClick={() => setIsOpen(false)}
+              className={cn(
+                "block py-2 text-sm font-medium transition-colors hover:text-energy",
+                location.pathname === "/" ? "text-energy" : "text-foreground/80"
+              )}
+            >
+              Главная
+            </Link>
+            
+            {/* Mobile Project Submenu */}
+            <div>
+              <button
+                onClick={() => setProjectOpen(!projectOpen)}
                 className={cn(
-                  "block py-2 text-sm font-medium transition-colors hover:text-energy",
-                  location.pathname === link.href ? "text-energy" : "text-foreground/80"
+                  "flex items-center gap-1 w-full py-2 text-sm font-medium transition-colors hover:text-energy",
+                  isProjectActive ? "text-energy" : "text-foreground/80"
                 )}
               >
-                {link.label}
-              </Link>
-            ))}
+                Проект
+                <ChevronDown className={cn("h-4 w-4 transition-transform", projectOpen && "rotate-180")} />
+              </button>
+              {projectOpen && (
+                <div className="pl-4">
+                  {projectSubLinks.map((link) => (
+                    <Link
+                      key={link.href}
+                      to={link.href}
+                      onClick={() => { setIsOpen(false); setProjectOpen(false); }}
+                      className={cn(
+                        "block py-2 text-sm font-medium transition-colors hover:text-energy",
+                        location.pathname === link.href ? "text-energy" : "text-foreground/80"
+                      )}
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <Link
+              to="/terms"
+              onClick={() => setIsOpen(false)}
+              className={cn(
+                "block py-2 text-sm font-medium transition-colors hover:text-energy",
+                location.pathname === "/terms" ? "text-energy" : "text-foreground/80"
+              )}
+            >
+              Условия выпуска
+            </Link>
+            <Link
+              to="/news"
+              onClick={() => setIsOpen(false)}
+              className={cn(
+                "block py-2 text-sm font-medium transition-colors hover:text-energy",
+                location.pathname === "/news" ? "text-energy" : "text-foreground/80"
+              )}
+            >
+              Новости
+            </Link>
+            <Link
+              to="/contact"
+              onClick={() => setIsOpen(false)}
+              className={cn(
+                "block py-2 text-sm font-medium transition-colors hover:text-energy",
+                location.pathname === "/contact" ? "text-energy" : "text-foreground/80"
+              )}
+            >
+              Контакты
+            </Link>
           </div>
         )}
       </div>
