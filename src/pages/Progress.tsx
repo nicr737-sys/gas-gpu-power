@@ -14,15 +14,18 @@ import rack2Img from "@/assets/progress-rack-2.jpg";
 import { CheckCircle2, Calendar, MapPin } from "lucide-react";
 
 const Progress = () => {
+  const productionPhotos = [
+    { src: progressPhoto3, alt: "Производственный цех" },
+    { src: progressPhoto6, alt: "Контейнеры в производственном помещении" },
+    { src: progressPhoto8, alt: "Цех с рабочими станциями" },
+  ];
+
   const photos = [
     { src: progressPhoto1, alt: "Площадка с контейнерами и оборудованием" },
     { src: progressPhoto2, alt: "Двигатель газопоршневой установки" },
-    { src: progressPhoto3, alt: "Производственный цех" },
     { src: progressPhoto4, alt: "Стойки с вычислительным оборудованием" },
     { src: progressPhoto5, alt: "Строительная площадка" },
-    { src: progressPhoto6, alt: "Контейнеры в производственном помещении" },
     { src: progressPhoto7, alt: "Вычислительное оборудование с панелью управления" },
-    { src: progressPhoto8, alt: "Цех с рабочими станциями" },
     { src: progressPhoto9, alt: "Модульные контейнеры с газовой обвязкой" },
     { src: warehouseImg, alt: "Производственное помещение" },
     { src: rack1Img, alt: "Стеллажи с оборудованием" },
@@ -40,6 +43,28 @@ const Progress = () => {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Фактическое состояние развертывания энергетического центра на промышленной площадке
           </p>
+        </div>
+
+        {/* Production Photos */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold text-center mb-8">Собственное производство майнинг-контейнеров</h2>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            {productionPhotos.map((photo, index) => (
+              <Card key={index} className="card-hover overflow-hidden">
+                <CardContent className="p-4">
+                  <img 
+                    src={photo.src} 
+                    alt={photo.alt} 
+                    className="w-full h-48 object-cover rounded-lg"
+                  />
+                  <p className="text-sm text-muted-foreground mt-2 text-center">
+                    {photo.alt}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
 
         {/* Photo Gallery */}
