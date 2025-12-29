@@ -65,7 +65,7 @@ const About = () => {
               
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="/!DOC/Buhgalsterskiy-balans/"
+                  href="/!DOC/Buhgalsterskiy-balans/index.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center rounded-md text-sm font-medium transition-colors bg-energy text-accent-foreground hover:bg-transparent hover:text-energy hover:border-energy border-2 border-energy h-11 px-8"
@@ -73,7 +73,7 @@ const About = () => {
                   Баланс
                 </a>
                 <a
-                  href="/!DOC/Otchet-o-finansovyh-rezultatah/"
+                  href="/!DOC/Otchet-o-finansovyh-rezultatah/index.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center rounded-md text-sm font-medium transition-colors bg-energy text-accent-foreground hover:bg-transparent hover:text-energy hover:border-energy border-2 border-energy h-11 px-8"
