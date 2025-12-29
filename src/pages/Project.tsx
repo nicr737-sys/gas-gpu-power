@@ -80,7 +80,7 @@ const Project = () => {
                   </p>
                   <div className="mt-4">
                     <Button asChild size="sm" className="bg-energy text-black hover:bg-transparent hover:text-energy hover:border-energy border border-transparent transition-colors">
-                      <a href="/!DOC/DOGOVOR-01-2A25/" target="_blank" rel="noopener noreferrer">
+                      <a href="/!DOC/DOGOVOR-01-2A25/index.html" target="_blank" rel="noopener noreferrer">
                         Посмотреть договор
                         <ExternalLink className="ml-2 h-4 w-4" />
                       </a>
@@ -130,7 +130,7 @@ const Project = () => {
                   </p>
                   <div className="mt-4">
                     <Button asChild size="sm" className="bg-energy text-black hover:bg-transparent hover:text-energy hover:border-energy border border-transparent transition-colors">
-                      <a href="/!DOC/Dogovor-821-2025/" target="_blank" rel="noopener noreferrer">
+                      <a href="/!DOC/Dogovor-821-2025/index.html" target="_blank" rel="noopener noreferrer">
                         Посмотреть договор
                         <ExternalLink className="ml-2 h-4 w-4" />
                       </a>
