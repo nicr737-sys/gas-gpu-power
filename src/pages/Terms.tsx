@@ -9,26 +9,26 @@ const Terms = () => {
     <div className="min-h-screen pt-32 pb-20 px-4">
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-bold mb-6">
-            Условия выпуска <span className="text-gradient">ГЦП</span>
+          <h1 className="text-4xl sm:text-5xl font-bold mb-6 break-words">
+            Условия выпуска <span className="text-gradient">ЦФА</span>
           </h1>
           
-          <p className="text-xl text-muted-foreground mb-12">
-            Цифровые финансовые активы, предоставляющие право на получение 100 кВт/ч электроэнергии 
-            за 1 (один) токен, либо 5500 рублей за один токен при погашении деньгами.
+          <p className="text-lg sm:text-xl text-muted-foreground mb-12 break-words">
+            Цифровые финансовые активы, предоставляющие право на получение 1 кВт/ч электроэнергии 
+            за 1 (один) токен, либо 5,5 рубля за один токен при погашении деньгами.
           </p>
 
           {/* GCP Model */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">Гибридные цифровые права (ГЦП)</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-8 break-words">Цифровые финансовые активы (ЦФА)</h2>
             
             <Card className="p-6 bg-card border-border shadow-[var(--shadow-card)] max-w-xl">
               <div className="p-3 rounded-lg bg-energy/10 w-fit mb-4">
                 <FileText className="h-8 w-8 text-energy" />
               </div>
-              <p className="text-muted-foreground mb-4">
-                ГЦП совмещают признаки цифровых финансовых активов, предоставляя гибкие опции 
-                использования (денежный расчёт, товар, услуга).
+              <p className="text-muted-foreground mb-4 break-words">
+                ЦФА совмещают признаки цифровых финансовых активов, предоставляя гибкие опции 
+                использования (денежный расчёт, товар, услуга). Технически выпуск осуществляется через механизм ГЦП (гибридных цифровых прав).
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">
@@ -53,7 +53,7 @@ const Terms = () => {
 
           {/* Acquisition Process */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">Процесс приобретения</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-8">Процесс приобретения</h2>
             
             <div className="space-y-4">
               {[
@@ -70,7 +70,7 @@ const Terms = () => {
                 {
                   step: 3,
                     title: "Покупка цифровых прав",
-                    description: "Приобретение ГЦП по установленной цене через интерфейс оператора или банка-оператора"
+                    description: "Приобретение ЦФА по установленной цене через интерфейс оператора или банка-оператора"
                   },
                 {
                   step: 4,
@@ -85,7 +85,7 @@ const Terms = () => {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                      <p className="text-muted-foreground">{item.description}</p>
+                      <p className="text-muted-foreground break-words">{item.description}</p>
                     </div>
                   </div>
                 </Card>
@@ -97,7 +97,7 @@ const Terms = () => {
                 <Users className="h-6 w-6 text-energy shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold mb-2">Выбор оператора информационной системы</h4>
-                  <p className="text-sm text-muted-foreground mb-3">
+                  <p className="text-sm text-muted-foreground mb-3 break-words">
                     Операторы ОИС для выпуска и обращения ЦФА включены в реестр Банка России. 
                     Ссылки на страницы операторов будут добавлены после выбора конкретного оператора.
                   </p>
@@ -117,11 +117,11 @@ const Terms = () => {
 
           {/* Key Terms */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">Ключевые условия</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-8">Ключевые условия</h2>
             
-            <Card className="p-8 bg-card border-border shadow-[var(--shadow-card)]">
+            <Card className="p-6 sm:p-8 bg-card border-border shadow-[var(--shadow-card)]">
               <div className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid sm:grid-cols-2 gap-6">
                   <div>
                     <div className="text-sm text-muted-foreground mb-1">Цена за кВт·ч</div>
                     <div className="text-2xl font-bold text-energy">3,85 ₽</div>
@@ -158,7 +158,7 @@ const Terms = () => {
                 </div>
 
                 <div className="pt-6 border-t border-border">
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-sm text-muted-foreground break-words">
                     * Детальные условия выпуска будут опубликованы в решении о выпуске после согласования с оператором ОИС
                   </p>
                 </div>
@@ -168,7 +168,7 @@ const Terms = () => {
 
           {/* Legal Notice */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold mb-8">Юридическая информация</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-8">Юридическая информация</h2>
             
             <Card className="p-6 bg-destructive/5 border-destructive/20 shadow-[var(--shadow-card)]">
               <div className="flex items-start gap-3">
@@ -179,31 +179,31 @@ const Terms = () => {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
-                        Цифровые финансовые активы (ГЦП) <strong>не являются банковским вкладом</strong> 
-                        и <strong>не застрахованы</strong> по ФЗ-177 «О страховании вкладов физических лиц в банках РФ»
+                        <span className="break-words">Цифровые финансовые активы (ЦФА) <strong>не являются банковским вкладом</strong> 
+                        и <strong>не застрахованы</strong> по ФЗ-177 «О страховании вкладов физических лиц в банках РФ»</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
-                        <strong>Инвестиционные риски несёт приобретатель.</strong> Стоимость и доступность 
-                        поставки могут зависеть от технических и экономических факторов
+                        <span className="break-words"><strong>Инвестиционные риски несёт приобретатель.</strong> Стоимость и доступность 
+                        поставки могут зависеть от технических и экономических факторов</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
-                        Данное предложение <strong>не адресовано лицам</strong> из юрисдикций с ограничениями 
-                        на приобретение цифровых финансовых активов
+                        <span className="break-words">Данное предложение <strong>не адресовано лицам</strong> из юрисдикций с ограничениями 
+                        на приобретение цифровых финансовых активов</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
-                        Выпуск и обращение осуществляются в соответствии с <strong>ФЗ-259</strong> 
+                        <span className="break-words">Выпуск и обращение осуществляются в соответствии с <strong>ФЗ-259</strong> 
                         «О цифровых финансовых активах, цифровой валюте и о внесении изменений 
-                        в отдельные законодательные акты Российской Федерации»
+                        в отдельные законодательные акты Российской Федерации»</span>
                       </li>
                     </ul>
                   </div>
 
                   <div className="pt-4 border-t border-destructive/20">
                     <h4 className="font-semibold mb-2">Нормативная база</h4>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-muted-foreground break-words">
                       Федеральный закон от 31.07.2020 № 259-ФЗ. Оператор информационной системы 
                       должен быть включён в реестр Банка России.
                     </p>
@@ -215,13 +215,13 @@ const Terms = () => {
 
           {/* CTA */}
           <section>
-            <Card className="p-8 bg-gradient-to-br from-card via-card to-energy/5 border-energy/30 text-center shadow-[var(--shadow-card)]">
+            <Card className="p-6 sm:p-8 bg-gradient-to-br from-card via-card to-energy/5 border-energy/30 text-center shadow-[var(--shadow-card)]">
               <ShieldCheck className="h-12 w-12 text-energy mx-auto mb-4" />
-              <h2 className="text-2xl font-bold mb-4">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4 break-words">
                 Готовы приобрести цифровые права?
               </h2>
-              <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-                Оставьте заявку, и мы проконсультируем вас по условиям выпуска ГЦП 
+              <p className="text-muted-foreground mb-6 max-w-xl mx-auto break-words">
+                Оставьте заявку, и мы проконсультируем вас по условиям выпуска ЦФА 
                 и процессу приобретения.
               </p>
               <Dialog>

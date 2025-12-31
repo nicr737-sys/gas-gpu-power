@@ -33,17 +33,21 @@ export const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-lg">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          <Link to="/" className="text-xl font-bold">
-            <span className="text-gradient">Энерго-контейнеры</span>
+          {/* Logo placeholder - готово для изображения */}
+          <Link to="/" className="flex items-center h-10">
+            {/* Место для логотипа: замените div на <img src="..." alt="Логотип" className="h-10 w-auto" /> */}
+            <div className="h-10 w-40 border-2 border-dashed border-energy/50 rounded flex items-center justify-center text-xs text-muted-foreground">
+              Место для логотипа
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-8">
             <Link
               to="/"
               className={cn(
-                "text-sm font-medium transition-colors hover:text-energy",
-                location.pathname === "/" ? "text-energy" : "text-foreground/80"
+                "text-base font-semibold transition-colors hover:text-energy",
+                location.pathname === "/" ? "text-energy" : "text-foreground"
               )}
             >
               Главная
@@ -52,8 +56,8 @@ export const Navigation = () => {
             {/* Project Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger className={cn(
-                "flex items-center gap-1 text-sm font-medium transition-colors hover:text-energy outline-none",
-                isProjectActive ? "text-energy" : "text-foreground/80"
+                "flex items-center gap-1 text-base font-semibold transition-colors hover:text-energy outline-none",
+                isProjectActive ? "text-energy" : "text-foreground"
               )}>
                 Проект
                 <ChevronDown className="h-4 w-4" />
@@ -78,8 +82,8 @@ export const Navigation = () => {
             <Link
               to="/terms"
               className={cn(
-                "text-sm font-medium transition-colors hover:text-energy",
-                location.pathname === "/terms" ? "text-energy" : "text-foreground/80"
+                "text-base font-semibold transition-colors hover:text-energy",
+                location.pathname === "/terms" ? "text-energy" : "text-foreground"
               )}
             >
               Условия выпуска
@@ -87,8 +91,8 @@ export const Navigation = () => {
             <Link
               to="/about"
               className={cn(
-                "text-sm font-medium transition-colors hover:text-energy",
-                location.pathname === "/about" ? "text-energy" : "text-foreground/80"
+                "text-base font-semibold transition-colors hover:text-energy",
+                location.pathname === "/about" ? "text-energy" : "text-foreground"
               )}
             >
               О компании
@@ -96,8 +100,8 @@ export const Navigation = () => {
             <Link
               to="/contact"
               className={cn(
-                "text-sm font-medium transition-colors hover:text-energy",
-                location.pathname === "/contact" ? "text-energy" : "text-foreground/80"
+                "text-base font-semibold transition-colors hover:text-energy",
+                location.pathname === "/contact" ? "text-energy" : "text-foreground"
               )}
             >
               Контакты
@@ -121,8 +125,8 @@ export const Navigation = () => {
               to="/"
               onClick={() => setIsOpen(false)}
               className={cn(
-                "block py-2 text-sm font-medium transition-colors hover:text-energy",
-                location.pathname === "/" ? "text-energy" : "text-foreground/80"
+                "block py-2 text-base font-semibold transition-colors hover:text-energy",
+                location.pathname === "/" ? "text-energy" : "text-foreground"
               )}
             >
               Главная
@@ -133,8 +137,8 @@ export const Navigation = () => {
               <button
                 onClick={() => setProjectOpen(!projectOpen)}
                 className={cn(
-                  "flex items-center gap-1 w-full py-2 text-sm font-medium transition-colors hover:text-energy",
-                  isProjectActive ? "text-energy" : "text-foreground/80"
+                  "flex items-center gap-1 w-full py-2 text-base font-semibold transition-colors hover:text-energy",
+                  isProjectActive ? "text-energy" : "text-foreground"
                 )}
               >
                 Проект
@@ -148,8 +152,8 @@ export const Navigation = () => {
                       to={link.href}
                       onClick={() => { setIsOpen(false); setProjectOpen(false); }}
                       className={cn(
-                        "block py-2 text-sm font-medium transition-colors hover:text-energy",
-                        location.pathname === link.href ? "text-energy" : "text-foreground/80"
+                        "block py-2 text-base font-medium transition-colors hover:text-energy",
+                        location.pathname === link.href ? "text-energy" : "text-foreground"
                       )}
                     >
                       {link.label}
@@ -163,8 +167,8 @@ export const Navigation = () => {
               to="/terms"
               onClick={() => setIsOpen(false)}
               className={cn(
-                "block py-2 text-sm font-medium transition-colors hover:text-energy",
-                location.pathname === "/terms" ? "text-energy" : "text-foreground/80"
+                "block py-2 text-base font-semibold transition-colors hover:text-energy",
+                location.pathname === "/terms" ? "text-energy" : "text-foreground"
               )}
             >
               Условия выпуска
@@ -173,8 +177,8 @@ export const Navigation = () => {
               to="/about"
               onClick={() => setIsOpen(false)}
               className={cn(
-                "block py-2 text-sm font-medium transition-colors hover:text-energy",
-                location.pathname === "/about" ? "text-energy" : "text-foreground/80"
+                "block py-2 text-base font-semibold transition-colors hover:text-energy",
+                location.pathname === "/about" ? "text-energy" : "text-foreground"
               )}
             >
               О компании
@@ -183,8 +187,8 @@ export const Navigation = () => {
               to="/contact"
               onClick={() => setIsOpen(false)}
               className={cn(
-                "block py-2 text-sm font-medium transition-colors hover:text-energy",
-                location.pathname === "/contact" ? "text-energy" : "text-foreground/80"
+                "block py-2 text-base font-semibold transition-colors hover:text-energy",
+                location.pathname === "/contact" ? "text-energy" : "text-foreground"
               )}
             >
               Контакты

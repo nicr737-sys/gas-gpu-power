@@ -5,18 +5,22 @@ import { Label } from "@/components/ui/label";
 import { Calculator } from "lucide-react";
 
 export const SavingsCalculator = () => {
-  const [power, setPower] = useState(100);
-  const [hoursPerDay, setHoursPerDay] = useState(24);
-  const [daysPerMonth, setDaysPerMonth] = useState(30);
+  const [power, setPower] = useState<string>("100");
+  const [hoursPerDay, setHoursPerDay] = useState<string>("24");
+  const [daysPerMonth, setDaysPerMonth] = useState<string>("30");
 
   const marketPrice = 5.5;
   const ucpPrice = 3.85;
 
-  const kWhPerMonth = power * hoursPerDay * daysPerMonth;
+  const powerNum = Number(power) || 0;
+  const hoursNum = Number(hoursPerDay) || 0;
+  const daysNum = Number(daysPerMonth) || 0;
+
+  const kWhPerMonth = powerNum * hoursNum * daysNum;
   const marketCost = kWhPerMonth * marketPrice;
   const ucpCost = kWhPerMonth * ucpPrice;
   const savings = marketCost - ucpCost;
-  const savingsPercent = ((savings / marketCost) * 100).toFixed(1);
+  const savingsPercent = marketCost > 0 ? ((savings / marketCost) * 100).toFixed(1) : "0";
 
   return (
     <Card className="p-6 bg-card border-border shadow-[var(--shadow-card)]">
@@ -32,9 +36,12 @@ export const SavingsCalculator = () => {
           <Label htmlFor="power">Мощность потребления (кВт)</Label>
           <Input
             id="power"
-            type="number"
+            type="text"
+            inputMode="numeric"
             value={power}
-            onChange={(e) => setPower(Number(e.target.value))}
+            onChange={(e) => setPower(e.target.value.replace(/[^0-9]/g, ''))}
+            onFocus={(e) => e.target.select()}
+            placeholder="Введите мощность"
             className="mt-2"
           />
         </div>
@@ -43,9 +50,12 @@ export const SavingsCalculator = () => {
           <Label htmlFor="hours">Часов работы в сутки</Label>
           <Input
             id="hours"
-            type="number"
+            type="text"
+            inputMode="numeric"
             value={hoursPerDay}
-            onChange={(e) => setHoursPerDay(Number(e.target.value))}
+            onChange={(e) => setHoursPerDay(e.target.value.replace(/[^0-9]/g, ''))}
+            onFocus={(e) => e.target.select()}
+            placeholder="Введите часы"
             className="mt-2"
           />
         </div>
@@ -54,9 +64,12 @@ export const SavingsCalculator = () => {
           <Label htmlFor="days">Дней в месяц</Label>
           <Input
             id="days"
-            type="number"
+            type="text"
+            inputMode="numeric"
             value={daysPerMonth}
-            onChange={(e) => setDaysPerMonth(Number(e.target.value))}
+            onChange={(e) => setDaysPerMonth(e.target.value.replace(/[^0-9]/g, ''))}
+            onFocus={(e) => e.target.select()}
+            placeholder="Введите дни"
             className="mt-2"
           />
         </div>
@@ -74,7 +87,7 @@ export const SavingsCalculator = () => {
         </div>
 
         <div className="flex justify-between text-sm">
-          <span className="text-muted-foreground">По ГЦП (3,85 ₽):</span>
+          <span className="text-muted-foreground">По ЦФА (3,85 ₽):</span>
           <span className="font-semibold text-energy">{ucpCost.toLocaleString()} ₽</span>
         </div>
 
