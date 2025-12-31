@@ -24,15 +24,15 @@ const Home = () => {
         
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              Электроэнергия по ГЦП <span className="text-gradient">за 3,85 ₽/кВт·ч</span>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight break-words">
+              Электроэнергия по ЦФА <span className="text-gradient">за 3,85 ₽/кВт·ч</span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-foreground/80 mb-8">
-              Энерго-контейнеры с газовыми ГПУ для майнинга
+            <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 mb-8 break-words">
+              Энерго-контейнеры с газопоршневыми установками (ГПУ) для майнинга
             </p>
             
-            <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto break-words">
               Снижение энергозатрат до ~35% относительно рынка. Поставка от собственных ГПУ. 
               По ТУ — масштабируемость до 37 МВт.
             </p>
@@ -67,7 +67,7 @@ const Home = () => {
       {/* Video Section */}
       <section className="py-20 px-4 bg-card/30">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Состояние объекта на 20 декабря 2025 года</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 break-words">Состояние объекта на 20 декабря 2025 года</h2>
           
           <div className="max-w-4xl mx-auto">
             <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-[var(--shadow-card)]">
@@ -88,7 +88,7 @@ const Home = () => {
       {/* Advantages */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Преимущества</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">Преимущества</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="p-6 bg-card border-border hover:border-energy/50 transition-all duration-300 shadow-[var(--shadow-card)]">
@@ -96,7 +96,7 @@ const Home = () => {
                 <TrendingDown className="h-8 w-8 text-energy" />
               </div>
               <h3 className="text-xl font-bold mb-3">Себестоимость и предсказуемость</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground break-words">
                 Фиксированный тариф 3,85 ₽/кВт·ч против рыночных ~5,5 ₽/кВт·ч. Прозрачное ценообразование.
               </p>
             </Card>
@@ -106,7 +106,7 @@ const Home = () => {
                 <Zap className="h-8 w-8 text-energy" />
               </div>
               <h3 className="text-xl font-bold mb-3">Автономность и отказоустойчивость</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground break-words">
                 Собственная генерация на базе газовых ГПУ. Независимость от внешних сетей.
               </p>
             </Card>
@@ -116,7 +116,7 @@ const Home = () => {
                 <Gauge className="h-8 w-8 text-energy" />
               </div>
               <h3 className="text-xl font-bold mb-3">Масштабируемость</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground break-words">
                 Текущие мощности расширяются. Потенциал до 37 МВт по техническим условиям.
               </p>
             </Card>
@@ -126,7 +126,7 @@ const Home = () => {
                 <ShieldCheck className="h-8 w-8 text-energy" />
               </div>
               <h3 className="text-xl font-bold mb-3">Юридическая чистота</h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground break-words">
                 Работаем по ФЗ-259. Выпуск через операторов информационных систем из реестра ЦБ РФ.
               </p>
             </Card>
@@ -137,7 +137,7 @@ const Home = () => {
       {/* How it works */}
       <section className="py-20 px-4 bg-card/30">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Как это работает</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">Как это работает</h2>
           
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
@@ -145,8 +145,8 @@ const Home = () => {
                 <div className="w-16 h-16 rounded-full bg-energy/10 border-2 border-energy flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-energy">
                   1
                 </div>
-                <h3 className="text-xl font-bold mb-3">Выпуск ГЦП</h3>
-                <p className="text-muted-foreground">
+                <h3 className="text-xl font-bold mb-3">Выпуск ЦФА</h3>
+                <p className="text-muted-foreground break-words">
                   Цифровые права на электроэнергию выпускаются через ОИС в соответствии с ФЗ-259
                 </p>
               </div>
@@ -156,7 +156,7 @@ const Home = () => {
                   2
                 </div>
                 <h3 className="text-xl font-bold mb-3">Оплата и поставка</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground break-words">
                   Приобретение токенов и получение кВт·ч по фиксированной цене 3,85 ₽/кВт·ч
                 </p>
               </div>
@@ -166,7 +166,7 @@ const Home = () => {
                   3
                 </div>
                 <h3 className="text-xl font-bold mb-3">Экономия на тарифе</h3>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground break-words">
                   Снижение затрат на электроэнергию до ~35% относительно рыночных тарифов
                 </p>
               </div>
@@ -185,29 +185,29 @@ const Home = () => {
       {/* Current Capacities */}
       <section className="py-20 px-4 bg-card/30">
         <div className="container mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12">Текущие мощности</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">Текущие мощности</h2>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
-              <div className="text-4xl font-bold text-energy mb-2">5×400</div>
+              <div className="text-3xl sm:text-4xl font-bold text-energy mb-2">5×400</div>
               <div className="text-sm text-muted-foreground">кВт установлено</div>
               <CheckCircle2 className="h-6 w-6 text-energy mx-auto mt-4" />
             </Card>
 
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
-              <div className="text-4xl font-bold text-energy mb-2">12×250</div>
+              <div className="text-3xl sm:text-4xl font-bold text-energy mb-2">12×250</div>
               <div className="text-sm text-muted-foreground">кВт (номинал 200 кВт)</div>
               <CheckCircle2 className="h-6 w-6 text-energy mx-auto mt-4" />
             </Card>
 
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
-              <div className="text-4xl font-bold text-energy-dim mb-2">+10×250</div>
+              <div className="text-3xl sm:text-4xl font-bold text-energy-dim mb-2">+10×250</div>
               <div className="text-sm text-muted-foreground">кВт в процессе установки</div>
               <div className="h-6 w-6 mx-auto mt-4 border-2 border-dashed border-energy-dim rounded-full" />
             </Card>
 
             <Card className="p-6 bg-card border-energy/30 border-2 text-center shadow-[var(--shadow-card)] glow">
-              <div className="text-4xl font-bold text-gradient mb-2">37 МВт</div>
+              <div className="text-3xl sm:text-4xl font-bold text-gradient mb-2">37 МВт</div>
               <div className="text-sm text-muted-foreground">потенциал по ТУ</div>
               <ArrowUpRight className="h-6 w-6 text-energy mx-auto mt-4" />
             </Card>
@@ -225,13 +225,13 @@ const Home = () => {
       {/* CTA */}
       <section className="py-20 px-4">
         <div className="container mx-auto">
-          <Card className="p-12 bg-gradient-to-br from-card via-card to-energy/5 border-energy/30 text-center shadow-[var(--shadow-card)]">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <Card className="p-8 sm:p-12 bg-gradient-to-br from-card via-card to-energy/5 border-energy/30 text-center shadow-[var(--shadow-card)]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 break-words">
               Готовы снизить затраты на электроэнергию?
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto break-words">
               Оставьте заявку, и мы свяжемся с вами для обсуждения условий поставки 
-              электроэнергии по ГЦП или предзаказа контейнера.
+              электроэнергии по ЦФА или предзаказа контейнера.
             </p>
             <Dialog>
               <DialogTrigger asChild>
