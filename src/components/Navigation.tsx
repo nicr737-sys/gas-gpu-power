@@ -8,6 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import logo from "@/assets/logo.jpg";
 
 const projectSubLinks = [
   { href: "/project", label: "Описание" },
@@ -33,12 +34,9 @@ export const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-lg">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo placeholder - готово для изображения */}
-          <Link to="/" className="flex items-center h-10">
-            {/* Место для логотипа: замените div на <img src="..." alt="Логотип" className="h-10 w-auto" /> */}
-            <div className="h-10 w-40 border-2 border-dashed border-energy/50 rounded flex items-center justify-center text-xs text-muted-foreground">
-              Место для логотипа
-            </div>
+          {/* Logo */}
+          <Link to="/" className="flex items-center h-12">
+            <img src={logo} alt="ЭнергоТех" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

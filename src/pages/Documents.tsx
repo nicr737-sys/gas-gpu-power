@@ -10,7 +10,7 @@ const Documents = () => {
       type: "PDF",
       size: "2.4 МБ",
       available: true,
-      downloadUrl: "#", // В реальном проекте здесь будет ссылка на файл
+      downloadUrl: "/docs/pasport-gpu-250.pdf",
     },
     {
       title: "Проект «Решения о выпуске»",
