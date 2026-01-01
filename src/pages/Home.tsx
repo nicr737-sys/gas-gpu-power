@@ -13,6 +13,7 @@ import {
   FileText,
   CheckCircle2
 } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const Home = () => {
   return (
@@ -24,6 +25,11 @@ const Home = () => {
         
         <div className="container mx-auto relative z-10">
           <div className="max-w-4xl mx-auto text-center">
+            {/* Logo */}
+            <div className="mb-8">
+              <img src={logo} alt="ЭнергоТех" className="h-24 sm:h-32 w-auto mx-auto" />
+            </div>
+            
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight break-words">
               Электроэнергия по ЦФА <span className="text-gradient">за 3,85 ₽/кВт·ч</span>
             </h1>
