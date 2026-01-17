@@ -36,7 +36,7 @@ export const Navigation = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Site Title */}
           <Link to="/" className="flex items-center">
-            <span className="text-lg font-bold text-energy">электротокены</span>
+            <span className="text-lg font-bold text-energy uppercase">ЭЛЕКТРОТОКЕНЫ</span>
           </Link>
 
           {/* Desktop Navigation */}
