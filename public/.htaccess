@@ -3,7 +3,8 @@
   RewriteBase /
 
   # Исключаем /!DOC/ из SPA — Apache отдаёт напрямую
-  RewriteRule ^!DOC/ - [L]
+  RewriteRule ^\!DOC/ - [L]
+  RewriteRule ^\!DOC - [L]
 
   # Если запрошен каталог и в нём есть index.html — отдаём его (SSG/каталоги)
   RewriteCond %{REQUEST_FILENAME} -d
