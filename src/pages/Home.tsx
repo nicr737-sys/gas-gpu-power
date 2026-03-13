@@ -142,7 +142,7 @@ const Home = () => {
                 <th className="text-left py-3 px-2 text-muted-foreground font-semibold">Период</th>
                 <th className="text-left py-3 px-2 text-muted-foreground font-semibold">Начало</th>
                 <th className="text-left py-3 px-2 text-muted-foreground font-semibold">Окончание</th>
-                <th className="text-right py-3 px-2 text-muted-foreground font-semibold">Выплата на 1 ЦФА</th>
+                <th className="text-right py-3 px-2 text-muted-foreground font-semibold">Выплата на 1 ГЦП</th>
               </tr></thead>
               <tbody>
                 {[
