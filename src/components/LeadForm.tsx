@@ -27,7 +27,7 @@ export const LeadForm = ({ onSuccess }: LeadFormProps) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!formData.consent) {
       toast({
         title: "Ошибка",
@@ -38,19 +38,38 @@ export const LeadForm = ({ onSuccess }: LeadFormProps) => {
     }
 
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast({
-      title: "Заявка отправлена!",
-      description: "Мы свяжемся с вами в ближайшее время.",
-    });
-    
+
+    try {
+      const projectId = import.meta.env.VITE_SUPABASE_PROJECT_ID;
+      const response = await fetch(
+        `https://${projectId}.supabase.co/functions/v1/send-lead-telegram`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Ошибка при отправке");
+      }
+
+      toast({
+        title: "Заявка отправлена!",
+        description: "Мы свяжемся с вами в ближайшее время.",
+      });
+
+      onSuccess?.();
+    } catch (err) {
+      toast({
+        title: "Ошибка отправки",
+        description: "Не удалось отправить заявку. Пожалуйста, попробуйте ещё раз или свяжитесь с нами напрямую.",
+        variant: "destructive",
+      });
+    }
+
     setIsSubmitting(false);
-    onSuccess?.();
-    
-    // Reset form
+
     setFormData({
       name: "",
       email: "",
@@ -123,8 +142,8 @@ export const LeadForm = ({ onSuccess }: LeadFormProps) => {
               <SelectValue placeholder="Выберите тип запроса" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="electricity">Покупка кВт·ч</SelectItem>
-              <SelectItem value="container">Покупка контейнера</SelectItem>
+              <SelectItem value="invest">Приобретение ГЦП</SelectItem>
+              <SelectItem value="info">Получить информацию</SelectItem>
               <SelectItem value="partnership">Партнёрство</SelectItem>
               <SelectItem value="other">Другое</SelectItem>
             </SelectContent>
@@ -132,14 +151,14 @@ export const LeadForm = ({ onSuccess }: LeadFormProps) => {
         </div>
 
         <div>
-          <Label htmlFor="consumption">Объём потребления (кВт)</Label>
+          <Label htmlFor="consumption">Планируемая сумма инвестиций (₽)</Label>
           <Input
             id="consumption"
             type="number"
             value={formData.consumption}
             onChange={(e) => setFormData({ ...formData, consumption: e.target.value })}
             className="mt-2"
-            placeholder="Например: 500"
+            placeholder="Например: 100000"
           />
         </div>
 
@@ -157,24 +176,25 @@ export const LeadForm = ({ onSuccess }: LeadFormProps) => {
           />
         </div>
 
-        <div className="flex items-start gap-2">
+        <div className="flex items-start gap-3 p-4 rounded-lg border-2 border-energy/30 bg-energy/5">
           <Checkbox
             id="consent"
             checked={formData.consent}
-            onCheckedChange={(checked) => 
+            onCheckedChange={(checked) =>
               setFormData({ ...formData, consent: checked as boolean })
             }
+            className="mt-0.5"
           />
-          <Label htmlFor="consent" className="text-sm text-muted-foreground cursor-pointer">
+          <Label htmlFor="consent" className="text-sm text-foreground cursor-pointer leading-relaxed">
             Я согласен на обработку персональных данных в соответствии с политикой конфиденциальности *
           </Label>
         </div>
       </div>
 
-      <Button 
-        type="submit" 
-        variant="energy" 
-        size="lg" 
+      <Button
+        type="submit"
+        variant="energy"
+        size="lg"
         className="w-full"
         disabled={isSubmitting}
       >
