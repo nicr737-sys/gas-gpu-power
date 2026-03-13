@@ -63,7 +63,7 @@ const Home = () => {
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
               <div className="p-3 rounded-lg bg-energy/10 w-fit mx-auto mb-4"><Banknote className="h-8 w-8 text-energy" /></div>
               <div className="text-3xl font-bold text-energy mb-1">1 000 ₽</div>
-              <div className="text-sm text-muted-foreground">Номинал 1 ЦФА</div>
+              <div className="text-sm text-muted-foreground">Номинал 1 ГЦП</div>
             </Card>
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
               <div className="p-3 rounded-lg bg-energy/10 w-fit mx-auto mb-4"><Percent className="h-8 w-8 text-energy" /></div>
