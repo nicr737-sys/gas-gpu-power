@@ -8,25 +8,32 @@ const Documents = () => {
       title: "Паспорт ГПУ-250",
       description: "Технический паспорт газопоршневой установки WEICHAI WP13-49 / ENGGA EG280-250N с полными техническими характеристиками и эксплуатационными данными.",
       type: "PDF",
-      size: "2.4 МБ",
+      size: "—",
       available: true,
       downloadUrl: "/docs/pasport-gpu-250-2026-01-01.pdf",
     },
     {
-      title: "Проект «Решения о выпуске»",
-      description: "Проект решения о выпуске цифровых финансовых активов (ГЦП) с условиями выпуска, обращения и погашения. Будет опубликован после согласования с оператором ОИС.",
+      title: "Политика гарантийного обслуживания",
+      description: "Политика гарантийного обслуживания газопоршневых установок с описанием условий, сроков и порядка гарантийного ремонта.",
       type: "PDF",
-      size: "TBD",
-      available: false,
-      downloadUrl: "#",
+      size: "—",
+      available: true,
+      downloadUrl: "/docs/politika-garantijnogo-obsluzhivaniya.pdf",
     },
     {
-      title: "Регламенты ОИС",
-      description: "Правила и регламенты работы оператора информационной системы, через которую осуществляется выпуск и обращение ЦФА.",
-      type: "Ссылка",
+      title: "Решение о выпуске ГЦП",
+      description: "Решение о выпуске гибридных цифровых прав (ГЦП) с условиями выпуска, обращения и погашения.",
+      type: "PDF",
       size: "—",
-      available: false,
-      externalUrl: "#",
+      available: true,
+      downloadUrl: "/docs/reshenie-o-vypuske-cfa.pdf",
+    },
+    {
+      title: "Регламенты ОИС «Статус»",
+      description: "Правила и регламенты работы оператора информационной системы, через которую осуществляется выпуск и обращение ГЦП.",
+      size: "—",
+      available: true,
+      externalUrl: "https://dfa.rostatus.ru/rules",
     },
   ];
 
@@ -37,16 +44,15 @@ const Documents = () => {
           <h1 className="text-5xl font-bold mb-6">
             <span className="text-gradient">Документы</span>
           </h1>
-          
+
           <p className="text-xl text-muted-foreground mb-12">
             Технические паспорта, решения о выпуске и регламенты операторов информационных систем.
           </p>
 
-          {/* Documents List */}
           <div className="space-y-6 mb-16">
             {documents.map((doc, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="p-6 bg-card border-border hover:border-energy/30 transition-all shadow-[var(--shadow-card)]"
               >
                 <div className="flex flex-col md:flex-row md:items-start gap-6">
@@ -68,12 +74,14 @@ const Documents = () => {
                     <p className="text-muted-foreground mb-4">{doc.description}</p>
 
                     <div className="flex flex-wrap items-center gap-4">
-                      <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                        <span className="px-2 py-1 rounded bg-muted">{doc.type}</span>
-                        {doc.size !== "—" && (
-                          <span>{doc.size}</span>
-                        )}
-                      </div>
+                      {doc.type && (
+                        <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                          <span className="px-2 py-1 rounded bg-muted">{doc.type}</span>
+                          {doc.size !== "—" && (
+                            <span>{doc.size}</span>
+                          )}
+                        </div>
+                      )}
 
                       {doc.available && doc.downloadUrl && (
                         <Button variant="energy" asChild>
@@ -105,10 +113,9 @@ const Documents = () => {
             ))}
           </div>
 
-          {/* External Resources */}
           <section>
             <h2 className="text-3xl font-bold mb-8">Внешние ресурсы</h2>
-            
+
             <div className="space-y-4">
               <Card className="p-6 bg-card border-border shadow-[var(--shadow-card)]">
                 <div className="flex items-start gap-4">
@@ -150,12 +157,15 @@ const Documents = () => {
                 <div className="flex items-start gap-4">
                   <FileText className="h-6 w-6 text-energy shrink-0 mt-0.5" />
                   <div className="flex-1">
-                    <h3 className="text-lg font-bold mb-2">Страница выбранного оператора ОИС</h3>
+                    <h3 className="text-lg font-bold mb-2">Страница ОИС «СТАТУС»</h3>
                     <p className="text-sm text-muted-foreground mb-3">
-                      Ссылка на страницу оператора информационной системы будет добавлена после выбора конкретного оператора.
+                      Ссылка на страницу оператора информационной системы.
                     </p>
-                    <Button variant="outline" size="sm" disabled>
-                      Будет добавлена позже
+                    <Button variant="hero" size="sm" asChild>
+                      <a href="https://dfa.rostatus.ru/" target="_blank" rel="noopener noreferrer">
+                        Перейти на сайт
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </a>
                     </Button>
                   </div>
                 </div>
