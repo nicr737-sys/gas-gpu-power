@@ -212,7 +212,7 @@ const Home = () => {
             </Card>
           </div>
           <p className="text-center text-muted-foreground mt-8">
-            <span className="inline-flex items-center gap-2"><FileText className="h-4 w-4" />Подробности в решении о выпуске ЦФА</span>
+            <span className="inline-flex items-center gap-2"><FileText className="h-4 w-4" />Подробности в решении о выпуске ГЦП</span>
           </p>
         </div>
       </section>
