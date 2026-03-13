@@ -8,11 +8,11 @@ import Home from "./pages/Home";
 import Project from "./pages/Project";
 import Terms from "./pages/Terms";
 import Documents from "./pages/Documents";
+
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Progress from "./pages/Progress";
 import DocumentViewer from "./pages/DocumentViewer";
-import PdfViewer from "./pages/PdfViewer";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,10 +29,10 @@ const App = () => (
             <Route path="/project" element={<Project />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/docs" element={<Documents />} />
+            
             <Route path="/about" element={<About />} />
             <Route path="/progress" element={<Progress />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/pdf" element={<PdfViewer />} />
             <Route path="/:slug" element={<DocumentViewer />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
