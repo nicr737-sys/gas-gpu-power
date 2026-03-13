@@ -20,12 +20,12 @@ const Documents = () => {
       available: true,
       downloadUrl: "/docs/politika-garantijnogo-obsluzhivaniya.pdf",
     },
-    {
-      title: "Решение о выпуске ЦФА",
-      description: "Решение о выпуске цифровых финансовых активов (ЦФА) с условиями выпуска, обращения и погашения.",
-      type: "PDF",
-      size: "—",
-      available: true,
+     {
+       title: "Решение о выпуске ГЦП",
+       description: "Решение о выпуске гибридных цифровых прав (ГЦП) с условиями выпуска, обращения и погашения.",
+       type: "PDF",
+       size: "—",
+       available: true,
       downloadUrl: "/docs/reshenie-o-vypuske-cfa.pdf",
     },
     {
