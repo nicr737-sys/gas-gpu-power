@@ -10,11 +10,11 @@ const Terms = () => {
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 break-words">
-            Условия выпуска <span className="text-gradient">ЦФА</span>
+           Условия выпуска <span className="text-gradient">ГЦП</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground mb-12 break-words">
-            Долговые цифровые финансовые активы с фиксированной доходностью 25% годовых.
+            Гибридные цифровые права с фиксированной доходностью 25% годовых.
             Номинал 1 000 ₽, ежеквартальные выплаты, погашение 05.03.2027.
           </p>
 
