@@ -21,7 +21,7 @@ const Home = () => {
               <img src={logo} alt="ЭнергоТех" className="h-24 sm:h-32 w-auto mx-auto" />
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight break-words">
-              Долговые ЦФА <span className="text-gradient">25% годовых</span>
+              Долговые ГЦП <span className="text-gradient">25% годовых</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 mb-8 break-words">
               Инвестируйте в энергетическую инфраструктуру через цифровые финансовые активы
