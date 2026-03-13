@@ -24,7 +24,7 @@ const Home = () => {
               Долговые ГЦП <span className="text-gradient">25% годовых</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 mb-8 break-words">
-              Инвестируйте в энергетическую инфраструктуру через цифровые финансовые активы
+              Инвестируйте в энергетическую инфраструктуру через гибридные цифровые права
             </p>
             <p className="text-base sm:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto break-words">
               Номинал 1 000 ₽ · Срок 1 год · Ежеквартальные выплаты · Погашение 05.03.2027.
