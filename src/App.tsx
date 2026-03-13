@@ -11,7 +11,7 @@ import Documents from "./pages/Documents";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Progress from "./pages/Progress";
-import DocumentViewer from "./pages/DocumentViewer";
+
 import PdfViewer from "./pages/PdfViewer";
 import NotFound from "./pages/NotFound";
 
