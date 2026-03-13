@@ -197,7 +197,7 @@ const Home = () => {
             </Card>
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
               <div className="text-3xl sm:text-4xl font-bold text-energy mb-2">1 000 ₽</div>
-              <div className="text-sm text-muted-foreground">номинал 1 ЦФА</div>
+              <div className="text-sm text-muted-foreground">номинал 1 ГЦП</div>
               <CheckCircle2 className="h-6 w-6 text-energy mx-auto mt-4" />
             </Card>
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
