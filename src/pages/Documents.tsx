@@ -122,8 +122,8 @@ const Documents = () => {
                   <ExternalLink className="h-6 w-6 text-energy shrink-0 mt-0.5" />
                   <div className="flex-1">
                     <h3 className="text-lg font-bold mb-2">Реестр операторов информационных систем ЦБ РФ</h3>
-                    <p className="text-sm text-muted-foreground mb-3">
-                      Официальный реестр операторов ОИС для выпуска и обращения цифровых финансовых активов.
+                     <p className="text-sm text-muted-foreground mb-3">
+                       Официальный реестр операторов ОИС для выпуска и обращения гибридных цифровых прав.
                     </p>
                     <Button variant="hero" size="sm" asChild>
                       <a href="https://cbr.ru/fintech/dfa/" target="_blank" rel="noopener noreferrer">
