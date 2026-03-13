@@ -78,7 +78,7 @@ const Home = () => {
             <Card className="p-6 bg-card border-energy/30 border-2 text-center shadow-[var(--shadow-card)] glow">
               <div className="p-3 rounded-lg bg-energy/10 w-fit mx-auto mb-4"><TrendingUp className="h-8 w-8 text-energy" /></div>
               <div className="text-3xl font-bold text-gradient mb-1">50 000</div>
-              <div className="text-sm text-muted-foreground">Количество ЦФА</div>
+              <div className="text-sm text-muted-foreground">Количество ГЦП</div>
             </Card>
           </div>
         </div>
