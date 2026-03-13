@@ -46,9 +46,9 @@ const Home = () => {
                 </DialogContent>
               </Dialog>
               <Button variant="hero" size="lg" className="text-lg" asChild>
-                <a href="/pdf?file=/docs/reshenie-o-vypuske-cfa.pdf&title=Решение о выпуске ЦФА">
+                <a href="/pdf?file=/docs/reshenie-o-vypuske-cfa.pdf&title=Решение о выпуске ГЦП">
                   <Download className="mr-2 h-5 w-5" />
-                  Решение о выпуске ЦФА
+                  Решение о выпуске ГЦП
                 </a>
               </Button>
             </div>
