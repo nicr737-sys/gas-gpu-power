@@ -13,7 +13,7 @@ import {
   FileText,
   CheckCircle2
 } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import logo from "@/assets/logo.svg";
 
 const Home = () => {
   return (
