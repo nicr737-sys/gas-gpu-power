@@ -160,7 +160,7 @@ const Home = () => {
                 ))}
               </tbody>
               <tfoot><tr className="border-t-2 border-energy/30">
-                <td colSpan={3} className="py-3 px-2 font-bold">Итого доход на 1 ЦФА</td>
+                <td colSpan={3} className="py-3 px-2 font-bold">Итого доход на 1 ГЦП</td>
                 <td className="py-3 px-2 text-right font-bold text-energy text-lg">~249,32 ₽</td>
               </tr></tfoot>
             </table>
