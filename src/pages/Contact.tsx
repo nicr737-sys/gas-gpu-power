@@ -48,7 +48,7 @@ const Contact = () => {
                   <div className="p-3 rounded-lg bg-energy/10 w-fit mx-auto mb-4">
                     <Mail className="h-6 w-6 text-energy" />
                   </div>
-                  <h3 className="font-bold mb-2">E-mail по ЦФА</h3>
+                  <h3 className="font-bold mb-2">E-mail по ГЦП</h3>
                   <a href="mailto:cfa@energy-tech.pro" className="text-sm text-energy hover:underline break-all">
                     cfa@energy-tech.pro
                   </a>
