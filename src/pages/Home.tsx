@@ -192,7 +192,7 @@ const Home = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
               <div className="text-3xl sm:text-4xl font-bold text-energy mb-2">50 000</div>
-              <div className="text-sm text-muted-foreground">ЦФА в выпуске</div>
+              <div className="text-sm text-muted-foreground">ГЦП в выпуске</div>
               <CheckCircle2 className="h-6 w-6 text-energy mx-auto mt-4" />
             </Card>
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
