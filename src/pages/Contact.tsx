@@ -18,7 +18,7 @@ const Contact = () => {
 
               <p className="text-xl text-muted-foreground mb-12">
                 Оставьте заявку, и мы свяжемся с вами для обсуждения условий приобретения
-                долговых ГЦП или партнёрства.
+                долговых ЦФА или партнёрства.
               </p>
 
               {/* Address */}
@@ -48,7 +48,7 @@ const Contact = () => {
                   <div className="p-3 rounded-lg bg-energy/10 w-fit mx-auto mb-4">
                     <Mail className="h-6 w-6 text-energy" />
                   </div>
-                  <h3 className="font-bold mb-2">E-mail по ГЦП</h3>
+                  <h3 className="font-bold mb-2">E-mail по ЦФА</h3>
                   <a href="mailto:cfa@energy-tech.pro" className="text-sm text-energy hover:underline break-all">
                     cfa@energy-tech.pro
                   </a>
@@ -71,9 +71,9 @@ const Contact = () => {
                   <div className="p-3 rounded-lg bg-energy/10 w-fit mx-auto mb-4">
                     <Mail className="h-6 w-6 text-energy" />
                   </div>
-                   <h3 className="font-bold mb-2">Покупка ГЦП</h3>
-                   <p className="text-sm text-muted-foreground">
-                     Приобретение долговых ГЦП с доходностью 25%
+                  <h3 className="font-bold mb-2">Покупка ЦФА</h3>
+                  <p className="text-sm text-muted-foreground">
+                    Приобретение долговых ЦФА с доходностью 25%
                   </p>
                 </Card>
 

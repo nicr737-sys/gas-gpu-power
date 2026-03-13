@@ -61,7 +61,7 @@ export const LeadForm = ({ onSuccess }: LeadFormProps) => {
           <Select required value={formData.requestType} onValueChange={(value) => setFormData({ ...formData, requestType: value })}>
             <SelectTrigger className="mt-2"><SelectValue placeholder="Выберите тип запроса" /></SelectTrigger>
             <SelectContent>
-              <SelectItem value="invest">Приобретение ГЦП</SelectItem>
+              <SelectItem value="invest">Приобретение ЦФА</SelectItem>
               <SelectItem value="info">Получить информацию</SelectItem>
               <SelectItem value="partnership">Партнёрство</SelectItem>
               <SelectItem value="other">Другое</SelectItem>

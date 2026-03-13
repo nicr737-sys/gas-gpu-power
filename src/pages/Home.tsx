@@ -21,10 +21,10 @@ const Home = () => {
               <img src={logo} alt="ЭнергоТех" className="h-24 sm:h-32 w-auto mx-auto" />
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight break-words">
-              Долговые ГЦП <span className="text-gradient">25% годовых</span>
+              Долговые ЦФА <span className="text-gradient">25% годовых</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 mb-8 break-words">
-              Инвестируйте в энергетическую инфраструктуру через гибридные цифровые права
+              Инвестируйте в энергетическую инфраструктуру через цифровые финансовые активы
             </p>
             <p className="text-base sm:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto break-words">
               Номинал 1 000 ₽ · Срок 1 год · Ежеквартальные выплаты · Погашение 05.03.2027.
@@ -46,9 +46,9 @@ const Home = () => {
                 </DialogContent>
               </Dialog>
               <Button variant="hero" size="lg" className="text-lg" asChild>
-                <a href="/pdf?file=/docs/reshenie-o-vypuske-cfa.pdf&title=Решение о выпуске ГЦП">
+                <a href="/pdf?file=/docs/reshenie-o-vypuske-cfa.pdf&title=Решение о выпуске ЦФА">
                   <Download className="mr-2 h-5 w-5" />
-                  Решение о выпуске ГЦП
+                  Решение о выпуске ЦФА
                 </a>
               </Button>
             </div>
@@ -63,7 +63,7 @@ const Home = () => {
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
               <div className="p-3 rounded-lg bg-energy/10 w-fit mx-auto mb-4"><Banknote className="h-8 w-8 text-energy" /></div>
               <div className="text-3xl font-bold text-energy mb-1">1 000 ₽</div>
-              <div className="text-sm text-muted-foreground">Номинал 1 ГЦП</div>
+              <div className="text-sm text-muted-foreground">Номинал 1 ЦФА</div>
             </Card>
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
               <div className="p-3 rounded-lg bg-energy/10 w-fit mx-auto mb-4"><Percent className="h-8 w-8 text-energy" /></div>
@@ -78,7 +78,7 @@ const Home = () => {
             <Card className="p-6 bg-card border-energy/30 border-2 text-center shadow-[var(--shadow-card)] glow">
               <div className="p-3 rounded-lg bg-energy/10 w-fit mx-auto mb-4"><TrendingUp className="h-8 w-8 text-energy" /></div>
               <div className="text-3xl font-bold text-gradient mb-1">50 000</div>
-              <div className="text-sm text-muted-foreground">Количество ГЦП</div>
+              <div className="text-sm text-muted-foreground">Количество ЦФА</div>
             </Card>
           </div>
         </div>
@@ -118,7 +118,7 @@ const Home = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { n: 1, t: "Приобретение ГЦП", d: "Регистрация на платформе АО «СТАТУС» и покупка ГЦП по номиналу 1 000 ₽ за штуку" },
+                { n: 1, t: "Приобретение ЦФА", d: "Регистрация на платформе АО «СТАТУС» и покупка ЦФА по номиналу 1 000 ₽ за штуку" },
                 { n: 2, t: "Ежеквартальный доход", d: "Получение дополнительного дохода 4 раза в год из расчёта 25% годовых от номинала" },
                 { n: 3, t: "Погашение", d: "05.03.2027 — возврат номинальной стоимости плюс последняя купонная выплата" },
               ].map(s => (
@@ -142,7 +142,7 @@ const Home = () => {
                 <th className="text-left py-3 px-2 text-muted-foreground font-semibold">Период</th>
                 <th className="text-left py-3 px-2 text-muted-foreground font-semibold">Начало</th>
                 <th className="text-left py-3 px-2 text-muted-foreground font-semibold">Окончание</th>
-                <th className="text-right py-3 px-2 text-muted-foreground font-semibold">Выплата на 1 ГЦП</th>
+                <th className="text-right py-3 px-2 text-muted-foreground font-semibold">Выплата на 1 ЦФА</th>
               </tr></thead>
               <tbody>
                 {[
@@ -160,7 +160,7 @@ const Home = () => {
                 ))}
               </tbody>
               <tfoot><tr className="border-t-2 border-energy/30">
-                <td colSpan={3} className="py-3 px-2 font-bold">Итого доход на 1 ГЦП</td>
+                <td colSpan={3} className="py-3 px-2 font-bold">Итого доход на 1 ЦФА</td>
                 <td className="py-3 px-2 text-right font-bold text-energy text-lg">~249,32 ₽</td>
               </tr></tfoot>
             </table>
@@ -192,12 +192,12 @@ const Home = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
               <div className="text-3xl sm:text-4xl font-bold text-energy mb-2">50 000</div>
-              <div className="text-sm text-muted-foreground">ГЦП в выпуске</div>
+              <div className="text-sm text-muted-foreground">ЦФА в выпуске</div>
               <CheckCircle2 className="h-6 w-6 text-energy mx-auto mt-4" />
             </Card>
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
               <div className="text-3xl sm:text-4xl font-bold text-energy mb-2">1 000 ₽</div>
-              <div className="text-sm text-muted-foreground">номинал 1 ГЦП</div>
+              <div className="text-sm text-muted-foreground">номинал 1 ЦФА</div>
               <CheckCircle2 className="h-6 w-6 text-energy mx-auto mt-4" />
             </Card>
             <Card className="p-6 bg-card border-border text-center shadow-[var(--shadow-card)]">
@@ -212,7 +212,7 @@ const Home = () => {
             </Card>
           </div>
           <p className="text-center text-muted-foreground mt-8">
-            <span className="inline-flex items-center gap-2"><FileText className="h-4 w-4" />Подробности в решении о выпуске ГЦП</span>
+            <span className="inline-flex items-center gap-2"><FileText className="h-4 w-4" />Подробности в решении о выпуске ЦФА</span>
           </p>
         </div>
       </section>
@@ -222,7 +222,7 @@ const Home = () => {
           <Card className="p-8 sm:p-12 bg-gradient-to-br from-card via-card to-energy/5 border-energy/30 text-center shadow-[var(--shadow-card)]">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 break-words">Готовы инвестировать под 25% годовых?</h2>
             <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto break-words">
-              Оставьте заявку, и мы свяжемся с вами для обсуждения условий приобретения долговых ГЦП ООО «Энерготех».
+              Оставьте заявку, и мы свяжемся с вами для обсуждения условий приобретения долговых ЦФА ООО «Энерготех».
             </p>
             <Dialog>
               <DialogTrigger asChild>

@@ -10,23 +10,23 @@ const Terms = () => {
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 break-words">
-           Условия выпуска <span className="text-gradient">ГЦП</span>
+            Условия выпуска <span className="text-gradient">ЦФА</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-muted-foreground mb-12 break-words">
-            Гибридные цифровые права с фиксированной доходностью 25% годовых.
+            Долговые цифровые финансовые активы с фиксированной доходностью 25% годовых.
             Номинал 1 000 ₽, ежеквартальные выплаты, погашение 05.03.2027.
           </p>
 
           <section className="mb-16">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-8 break-words">Гибридные цифровые права (ГЦП)</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-8 break-words">Цифровые финансовые активы (ЦФА)</h2>
 
             <Card className="p-6 bg-card border-border shadow-[var(--shadow-card)] max-w-xl">
               <div className="p-3 rounded-lg bg-energy/10 w-fit mb-4">
                 <FileText className="h-8 w-8 text-energy" />
               </div>
               <p className="text-muted-foreground mb-4 break-words">
-                ГЦП ООО «ЭнергоТех» — это гибридные цифровые права, удостоверяющие право требования
+                Долговые ЦФА ООО «ЭнергоТех» — это цифровые финансовые активы, удостоверяющие право требования
                 выплаты номинальной стоимости и дополнительного дохода. Выпуск через АО «СТАТУС» по ФЗ-259.
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
@@ -45,7 +45,7 @@ const Terms = () => {
               {[
                 { step: 1, title: "Идентификация", description: "Прохождение процедуры KYC/KYB в соответствии с требованиями оператора ОИС и законодательства РФ" },
                 { step: 2, title: "Присоединение к правилам ОИС", description: "Ознакомление и присоединение к правилам информационной системы, через которую осуществляется выпуск" },
-                { step: 3, title: "Покупка цифровых прав", description: "Приобретение ГЦП по установленной цене через интерфейс оператора или банка-оператора" },
+                { step: 3, title: "Покупка цифровых прав", description: "Приобретение ЦФА по установленной цене через интерфейс оператора или банка-оператора" },
                 { step: 4, title: "Получение дохода", description: "Ежеквартальные выплаты из расчёта 25% годовых и возврат номинала при погашении 05.03.2027" },
               ].map((item) => (
                 <Card key={item.step} className="p-6 bg-card border-border hover:border-energy/30 transition-all shadow-[var(--shadow-card)]">
@@ -66,9 +66,9 @@ const Terms = () => {
               <div className="flex items-start gap-3">
                 <Users className="h-6 w-6 text-energy shrink-0 mt-0.5" />
                 <div>
-                   <h4 className="font-semibold mb-2">Выбор оператора информационной системы</h4>
+                  <h4 className="font-semibold mb-2">Выбор оператора информационной системы</h4>
                   <p className="text-sm text-muted-foreground mb-3 break-words">
-                    Операторы ОИС для выпуска и обращения ГЦП включены в реестр Банка России.
+                    Операторы ОИС для выпуска и обращения ЦФА включены в реестр Банка России.
                     Ссылки на страницы операторов будут добавлены после выбора конкретного оператора.
                   </p>
                   <a
@@ -97,7 +97,7 @@ const Terms = () => {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
-                        <span className="break-words">Гибридные цифровые права (ГЦП) <strong>не являются банковским вкладом</strong> и <strong>не застрахованы</strong> по ФЗ-177 «О страховании вкладов физических лиц в банках РФ»</span>
+                        <span className="break-words">Цифровые финансовые активы (ЦФА) <strong>не являются банковским вкладом</strong> и <strong>не застрахованы</strong> по ФЗ-177 «О страховании вкладов физических лиц в банках РФ»</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
@@ -105,11 +105,11 @@ const Terms = () => {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
-                        <span className="break-words">Данное предложение <strong>не адресовано лицам</strong> из юрисдикций с ограничениями на приобретение гибридных цифровых прав</span>
+                        <span className="break-words">Данное предложение <strong>не адресовано лицам</strong> из юрисдикций с ограничениями на приобретение цифровых финансовых активов</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
-                        <span className="break-words">Выпуск и обращение осуществляются в соответствии с <strong>ФЗ-259</strong> «О цифровых финансовых активах, цифровой валюте и о внесении изменений в отдельные законодательные акты Российской Федерации» и <strong>ФЗ-489</strong></span>
+                        <span className="break-words">Выпуск и обращение осуществляются в соответствии с <strong>ФЗ-259</strong> «О цифровых финансовых активах, цифровой валюте и о внесении изменений в отдельные законодательные акты Российской Федерации»</span>
                       </li>
                     </ul>
                   </div>
@@ -133,7 +133,7 @@ const Terms = () => {
                 Готовы приобрести цифровые права?
               </h2>
               <p className="text-muted-foreground mb-6 max-w-xl mx-auto break-words">
-                Оставьте заявку, и мы проконсультируем вас по условиям выпуска ГЦП
+                Оставьте заявку, и мы проконсультируем вас по условиям выпуска ЦФА
                 и процессу приобретения.
               </p>
               <Dialog>

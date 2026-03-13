@@ -11,7 +11,7 @@ import Documents from "./pages/Documents";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Progress from "./pages/Progress";
-
+import DocumentViewer from "./pages/DocumentViewer";
 import PdfViewer from "./pages/PdfViewer";
 import NotFound from "./pages/NotFound";
 
@@ -33,7 +33,7 @@ const App = () => (
             <Route path="/progress" element={<Progress />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/pdf" element={<PdfViewer />} />
-            
+            <Route path="/:slug" element={<DocumentViewer />} />
           </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
