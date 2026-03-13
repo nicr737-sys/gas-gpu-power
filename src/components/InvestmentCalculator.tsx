@@ -43,7 +43,7 @@ export const InvestmentCalculator = () => {
 
       <div className="space-y-3 p-4 rounded-lg bg-muted/30">
         <div className="flex justify-between text-sm">
-          <span className="text-muted-foreground">Количество ЦФА:</span>
+          <span className="text-muted-foreground">Количество ГЦП:</span>
           <span className="font-semibold">{cfaCount.toLocaleString()} шт.</span>
         </div>
 
