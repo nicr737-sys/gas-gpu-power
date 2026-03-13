@@ -66,9 +66,9 @@ const Terms = () => {
               <div className="flex items-start gap-3">
                 <Users className="h-6 w-6 text-energy shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold mb-2">Выбор оператора информационной системы</h4>
+                   <h4 className="font-semibold mb-2">Выбор оператора информационной системы</h4>
                   <p className="text-sm text-muted-foreground mb-3 break-words">
-                    Операторы ОИС для выпуска и обращения ЦФА включены в реестр Банка России.
+                    Операторы ОИС для выпуска и обращения ГЦП включены в реестр Банка России.
                     Ссылки на страницы операторов будут добавлены после выбора конкретного оператора.
                   </p>
                   <a
