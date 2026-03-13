@@ -222,7 +222,7 @@ const Home = () => {
           <Card className="p-8 sm:p-12 bg-gradient-to-br from-card via-card to-energy/5 border-energy/30 text-center shadow-[var(--shadow-card)]">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 break-words">Готовы инвестировать под 25% годовых?</h2>
             <p className="text-base sm:text-lg text-muted-foreground mb-8 max-w-2xl mx-auto break-words">
-              Оставьте заявку, и мы свяжемся с вами для обсуждения условий приобретения долговых ЦФА ООО «Энерготех».
+              Оставьте заявку, и мы свяжемся с вами для обсуждения условий приобретения долговых ГЦП ООО «Энерготех».
             </p>
             <Dialog>
               <DialogTrigger asChild>

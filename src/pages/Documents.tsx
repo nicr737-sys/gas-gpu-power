@@ -141,7 +141,7 @@ const Documents = () => {
                   <div className="flex-1">
                     <h3 className="text-lg font-bold mb-2">ФЗ-259 «О цифровых финансовых активах»</h3>
                     <p className="text-sm text-muted-foreground mb-3">
-                      Федеральный закон, регулирующий выпуск, обращение и погашение цифровых финансовых активов в Российской Федерации.
+                      Федеральный закон, регулирующий выпуск, обращение и погашение цифровых финансовых активов и гибридных цифровых прав в Российской Федерации.
                     </p>
                     <Button variant="hero" size="sm" asChild>
                       <a href="http://www.consultant.ru/document/cons_doc_LAW_358753/" target="_blank" rel="noopener noreferrer">
