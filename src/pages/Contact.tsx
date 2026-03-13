@@ -71,9 +71,9 @@ const Contact = () => {
                   <div className="p-3 rounded-lg bg-energy/10 w-fit mx-auto mb-4">
                     <Mail className="h-6 w-6 text-energy" />
                   </div>
-                  <h3 className="font-bold mb-2">Покупка ЦФА</h3>
-                  <p className="text-sm text-muted-foreground">
-                    Приобретение долговых ЦФА с доходностью 25%
+                   <h3 className="font-bold mb-2">Покупка ГЦП</h3>
+                   <p className="text-sm text-muted-foreground">
+                     Приобретение долговых ГЦП с доходностью 25%
                   </p>
                 </Card>
 
