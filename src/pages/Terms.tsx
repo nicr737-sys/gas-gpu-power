@@ -179,7 +179,7 @@ const Terms = () => {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
-                        <span className="break-words">Цифровые финансовые активы (ЦФА) <strong>не являются банковским вкладом</strong> 
+                        <span className="break-words">Утилитарные цифровые права (УЦП) <strong>не являются банковским вкладом</strong> 
                         и <strong>не застрахованы</strong> по ФЗ-177 «О страховании вкладов физических лиц в банках РФ»</span>
                       </li>
                       <li className="flex items-start gap-2">
