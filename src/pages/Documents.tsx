@@ -21,8 +21,8 @@ const Documents = () => {
       downloadUrl: "/docs/politika-garantijnogo-obsluzhivaniya.pdf",
     },
     {
-      title: "Решение о выпуске ГЦП",
-      description: "Решение о выпуске гибридных цифровых прав (ГЦП) с условиями выпуска, обращения и погашения.",
+      title: "Решение о выпуске УЦП",
+      description: "Решение о выпуске утилитарных цифровых прав (УЦП) «Инфраструктурный Энерго-Юнит» (IEU) с условиями выпуска, обращения и погашения.",
       type: "PDF",
       size: "—",
       available: true,
@@ -30,7 +30,7 @@ const Documents = () => {
     },
     {
       title: "Регламенты ОИС «Статус»",
-      description: "Правила и регламенты работы оператора информационной системы, через которую осуществляется выпуск и обращение ГЦП.",
+      description: "Правила и регламенты работы оператора информационной системы, через которую осуществляется выпуск и обращение УЦП.",
       size: "—",
       available: true,
       externalUrl: "https://dfa.rostatus.ru/rules",
@@ -123,7 +123,7 @@ const Documents = () => {
                   <div className="flex-1">
                     <h3 className="text-lg font-bold mb-2">Реестр операторов информационных систем ЦБ РФ</h3>
                     <p className="text-sm text-muted-foreground mb-3">
-                      Официальный реестр операторов ОИС для выпуска и обращения цифровых финансовых активов.
+                      Официальный реестр операторов ОИС для выпуска и обращения цифровых прав.
                     </p>
                     <Button variant="hero" size="sm" asChild>
                       <a href="https://cbr.ru/fintech/dfa/" target="_blank" rel="noopener noreferrer">
@@ -141,7 +141,7 @@ const Documents = () => {
                   <div className="flex-1">
                     <h3 className="text-lg font-bold mb-2">ФЗ-259 «О цифровых финансовых активах»</h3>
                     <p className="text-sm text-muted-foreground mb-3">
-                      Федеральный закон, регулирующий выпуск, обращение и погашение цифровых финансовых активов в Российской Федерации.
+                      Федеральный закон, регулирующий выпуск, обращение и погашение цифровых прав в Российской Федерации.
                     </p>
                     <Button variant="hero" size="sm" asChild>
                       <a href="http://www.consultant.ru/document/cons_doc_LAW_358753/" target="_blank" rel="noopener noreferrer">
