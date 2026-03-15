@@ -41,7 +41,7 @@ const Terms = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-energy mt-1">•</span>
-                  Поддержка ОИС (в зависимости от оператора)
+                  Выпуск через инвестиционную платформу (ОИП)
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-energy mt-1">•</span>
