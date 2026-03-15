@@ -10,25 +10,25 @@ const Terms = () => {
       <div className="container mx-auto">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl font-bold mb-6 break-words">
-            Условия выпуска <span className="text-gradient">ЦФА</span>
+            Условия выпуска <span className="text-gradient">УЦП</span>
           </h1>
           
           <p className="text-lg sm:text-xl text-muted-foreground mb-12 break-words">
-            Цифровые финансовые активы, предоставляющие право на получение 1 кВт/ч электроэнергии 
+            Утилитарные цифровые права, предоставляющие право на получение 1 кВт/ч электроэнергии 
             за 1 (один) токен, либо 5,5 рубля за один токен при погашении деньгами.
           </p>
 
           {/* GCP Model */}
           <section className="mb-16">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-8 break-words">Цифровые финансовые активы (ЦФА)</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-8 break-words">Утилитарные цифровые права (УЦП)</h2>
             
             <Card className="p-6 bg-card border-border shadow-[var(--shadow-card)] max-w-xl">
               <div className="p-3 rounded-lg bg-energy/10 w-fit mb-4">
                 <FileText className="h-8 w-8 text-energy" />
               </div>
               <p className="text-muted-foreground mb-4 break-words">
-                ЦФА совмещают признаки цифровых финансовых активов, предоставляя гибкие опции 
-                использования (денежный расчёт, товар, услуга). Технически выпуск осуществляется через механизм ГЦП (гибридных цифровых прав).
+                УЦП предоставляют гибкие опции использования (денежный расчёт, товар, услуга). 
+                Выпуск осуществляется через оператора инвестиционной платформы (ОИП).
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">
@@ -41,7 +41,7 @@ const Terms = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-energy mt-1">•</span>
-                  Поддержка ОИС (в зависимости от оператора)
+                  Выпуск через инвестиционную платформу (ОИП)
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-energy mt-1">•</span>
@@ -60,17 +60,17 @@ const Terms = () => {
                 {
                   step: 1,
                   title: "Идентификация",
-                  description: "Прохождение процедуры KYC/KYB в соответствии с требованиями оператора ОИС и законодательства РФ"
+                  description: "Прохождение процедуры KYC/KYB в соответствии с требованиями оператора инвестиционной платформы и законодательства РФ"
                 },
                 {
                   step: 2,
-                  title: "Присоединение к правилам ОИС",
-                  description: "Ознакомление и присоединение к правилам информационной системы, через которую осуществляется выпуск"
+                   title: "Присоединение к правилам платформы",
+                   description: "Ознакомление и присоединение к правилам инвестиционной платформы, через которую осуществляется выпуск"
                 },
                 {
                   step: 3,
                     title: "Покупка цифровых прав",
-                    description: "Приобретение ЦФА по установленной цене через интерфейс оператора или банка-оператора"
+                    description: "Приобретение УЦП по установленной цене через интерфейс инвестиционной платформы"
                   },
                 {
                   step: 4,
@@ -96,19 +96,19 @@ const Terms = () => {
               <div className="flex items-start gap-3">
                 <Users className="h-6 w-6 text-energy shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold mb-2">Выбор оператора информационной системы</h4>
-                  <p className="text-sm text-muted-foreground mb-3 break-words">
-                    Операторы ОИС для выпуска и обращения ЦФА включены в реестр Банка России. 
-                    Ссылки на страницы операторов будут добавлены после выбора конкретного оператора.
-                  </p>
-                  <a 
-                    href="https://cbr.ru/fintech/dfa/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-sm text-energy hover:underline inline-flex items-center gap-2"
-                  >
-                    Реестр операторов ОИС ЦБ РФ
-                    <ArrowRight className="h-4 w-4" />
+                   <h4 className="font-semibold mb-2">Выбор оператора инвестиционной платформы</h4>
+                   <p className="text-sm text-muted-foreground mb-3 break-words">
+                     Операторы инвестиционных платформ для выпуска и обращения УЦП включены в реестр Банка России. 
+                     Ссылки на страницы операторов будут добавлены после выбора конкретного оператора.
+                   </p>
+                   <a 
+                     href="https://cbr.ru/fintech/dfa/" 
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     className="text-sm text-energy hover:underline inline-flex items-center gap-2"
+                   >
+                     Реестр операторов инвестиционных платформ ЦБ РФ
+                     <ArrowRight className="h-4 w-4" />
                   </a>
                 </div>
               </div>
@@ -151,7 +151,7 @@ const Terms = () => {
                   </div>
 
                   <div>
-                    <div className="text-sm text-muted-foreground mb-1">Оператор ОИС</div>
+                    <div className="text-sm text-muted-foreground mb-1">Оператор инвестиционной платформы</div>
                     <div className="text-lg font-bold text-muted-foreground">TBD</div>
                     <div className="text-xs text-muted-foreground">В процессе выбора</div>
                   </div>
@@ -159,7 +159,7 @@ const Terms = () => {
 
                 <div className="pt-6 border-t border-border">
                   <p className="text-sm text-muted-foreground break-words">
-                    * Детальные условия выпуска будут опубликованы в решении о выпуске после согласования с оператором ОИС
+                    * Детальные условия выпуска будут опубликованы в решении о выпуске после согласования с оператором инвестиционной платформы
                   </p>
                 </div>
               </div>
@@ -179,7 +179,7 @@ const Terms = () => {
                     <ul className="space-y-2 text-sm text-muted-foreground">
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
-                        <span className="break-words">Цифровые финансовые активы (ЦФА) <strong>не являются банковским вкладом</strong> 
+                        <span className="break-words">Утилитарные цифровые права (УЦП) <strong>не являются банковским вкладом</strong> 
                         и <strong>не застрахованы</strong> по ФЗ-177 «О страховании вкладов физических лиц в банках РФ»</span>
                       </li>
                       <li className="flex items-start gap-2">
@@ -190,7 +190,7 @@ const Terms = () => {
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
                         <span className="break-words">Данное предложение <strong>не адресовано лицам</strong> из юрисдикций с ограничениями 
-                        на приобретение цифровых финансовых активов</span>
+                        на приобретение утилитарных цифровых прав</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
@@ -204,7 +204,7 @@ const Terms = () => {
                   <div className="pt-4 border-t border-destructive/20">
                     <h4 className="font-semibold mb-2">Нормативная база</h4>
                     <p className="text-sm text-muted-foreground break-words">
-                      Федеральный закон от 31.07.2020 № 259-ФЗ. Оператор информационной системы 
+                      Федеральный закон от 31.07.2020 № 259-ФЗ. Оператор инвестиционной платформы 
                       должен быть включён в реестр Банка России.
                     </p>
                   </div>
@@ -221,7 +221,7 @@ const Terms = () => {
                 Готовы приобрести цифровые права?
               </h2>
               <p className="text-muted-foreground mb-6 max-w-xl mx-auto break-words">
-                Оставьте заявку, и мы проконсультируем вас по условиям выпуска ЦФА 
+                Оставьте заявку, и мы проконсультируем вас по условиям выпуска УЦП 
                 и процессу приобретения.
               </p>
               <Dialog>
