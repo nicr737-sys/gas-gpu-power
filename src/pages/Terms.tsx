@@ -204,7 +204,7 @@ const Terms = () => {
                   <div className="pt-4 border-t border-destructive/20">
                     <h4 className="font-semibold mb-2">Нормативная база</h4>
                     <p className="text-sm text-muted-foreground break-words">
-                      Федеральный закон от 31.07.2020 № 259-ФЗ. Оператор информационной системы 
+                      Федеральный закон от 31.07.2020 № 259-ФЗ. Оператор инвестиционной платформы 
                       должен быть включён в реестр Банка России.
                     </p>
                   </div>
