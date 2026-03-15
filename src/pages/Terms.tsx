@@ -151,7 +151,7 @@ const Terms = () => {
                   </div>
 
                   <div>
-                    <div className="text-sm text-muted-foreground mb-1">Оператор ОИС</div>
+                    <div className="text-sm text-muted-foreground mb-1">Оператор инвестиционной платформы</div>
                     <div className="text-lg font-bold text-muted-foreground">TBD</div>
                     <div className="text-xs text-muted-foreground">В процессе выбора</div>
                   </div>
