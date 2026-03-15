@@ -33,11 +33,11 @@ const Home = () => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight break-words">
-              Инфраструктурный Энерго-Юнит <span className="text-gradient">(IEU)</span>
+              Электроэнергия по УЦП за <span className="text-gradient">3,85 ₽/кВт·ч</span>
             </h1>
             
             <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 mb-8 break-words">
-              УЦП на комплексную услугу размещения вычислительного оборудования в контейнерном ЦОД с собственной ГПЭС. Стоимость — <span className="text-energy font-bold">3,85 ₽/кВт·ч</span>
+              УЦП на комплексную услугу размещения вычислительного оборудования в контейнерном ЦОД с собственной ГПЭС
             </p>
             
             <p className="text-base sm:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto break-words">
