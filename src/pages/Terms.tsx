@@ -190,7 +190,7 @@ const Terms = () => {
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
                         <span className="break-words">Данное предложение <strong>не адресовано лицам</strong> из юрисдикций с ограничениями 
-                        на приобретение цифровых финансовых активов</span>
+                        на приобретение утилитарных цифровых прав</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-destructive mt-1">•</span>
