@@ -21,8 +21,8 @@ const Documents = () => {
       downloadUrl: "/docs/politika-garantijnogo-obsluzhivaniya.pdf",
     },
     {
-      title: "Решение о выпуске ГЦП",
-      description: "Решение о выпуске гибридных цифровых прав (ГЦП) с условиями выпуска, обращения и погашения.",
+      title: "Решение о выпуске УЦП",
+      description: "Решение о выпуске утилитарных цифровых прав (УЦП) «Инфраструктурный Энерго-Юнит» (IEU) с условиями выпуска, обращения и погашения.",
       type: "PDF",
       size: "—",
       available: true,
