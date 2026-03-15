@@ -96,19 +96,19 @@ const Terms = () => {
               <div className="flex items-start gap-3">
                 <Users className="h-6 w-6 text-energy shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold mb-2">Выбор оператора информационной системы</h4>
-                  <p className="text-sm text-muted-foreground mb-3 break-words">
-                    Операторы ОИС для выпуска и обращения ЦФА включены в реестр Банка России. 
-                    Ссылки на страницы операторов будут добавлены после выбора конкретного оператора.
-                  </p>
-                  <a 
-                    href="https://cbr.ru/fintech/dfa/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-sm text-energy hover:underline inline-flex items-center gap-2"
-                  >
-                    Реестр операторов ОИС ЦБ РФ
-                    <ArrowRight className="h-4 w-4" />
+                   <h4 className="font-semibold mb-2">Выбор оператора инвестиционной платформы</h4>
+                   <p className="text-sm text-muted-foreground mb-3 break-words">
+                     Операторы инвестиционных платформ для выпуска и обращения УЦП включены в реестр Банка России. 
+                     Ссылки на страницы операторов будут добавлены после выбора конкретного оператора.
+                   </p>
+                   <a 
+                     href="https://cbr.ru/fintech/dfa/" 
+                     target="_blank" 
+                     rel="noopener noreferrer"
+                     className="text-sm text-energy hover:underline inline-flex items-center gap-2"
+                   >
+                     Реестр операторов инвестиционных платформ ЦБ РФ
+                     <ArrowRight className="h-4 w-4" />
                   </a>
                 </div>
               </div>
