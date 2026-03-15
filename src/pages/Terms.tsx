@@ -20,7 +20,7 @@ const Terms = () => {
 
           {/* GCP Model */}
           <section className="mb-16">
-            <h2 className="text-2xl sm:text-3xl font-bold mb-8 break-words">Цифровые финансовые активы (ЦФА)</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-8 break-words">Утилитарные цифровые права (УЦП)</h2>
             
             <Card className="p-6 bg-card border-border shadow-[var(--shadow-card)] max-w-xl">
               <div className="p-3 rounded-lg bg-energy/10 w-fit mb-4">
