@@ -37,7 +37,7 @@ const Home = () => {
             </h1>
             
             <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 mb-8 break-words">
-              УЦП на комплексную услугу размещения вычислительного оборудования в контейнерном ЦОД с собственной ГПЭС
+              УЦП на комплексную услугу размещения вычислительного оборудования в контейнерном ЦОД с собственной ГПЭС. Стоимость — <span className="text-energy font-bold">3,85 ₽/кВт·ч</span>
             </p>
             
             <p className="text-base sm:text-lg text-muted-foreground mb-10 max-w-2xl mx-auto break-words">
