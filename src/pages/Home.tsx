@@ -75,19 +75,34 @@ const Home = () => {
       {/* Video Section */}
       <section className="py-20 px-4 bg-card/30">
         <div className="container mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 break-words">Состояние объекта на 20 декабря 2025 года</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-[var(--shadow-card)]">
-              <iframe 
-                width="100%" 
-                height="100%" 
-                src="https://rutube.ru/play/embed/1de73152140b0f3ea78727fbf9a83db5/"
-                style={{ border: 'none' }} 
-                allow="clipboard-write; autoplay" 
-                allowFullScreen
-                className="absolute inset-0"
-              />
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 break-words">Состояние объекта на 20 декабря 2025 года</h2>
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-[var(--shadow-card)]">
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://rutube.ru/play/embed/1de73152140b0f3ea78727fbf9a83db5/"
+                  style={{ border: 'none' }} 
+                  allow="clipboard-write; autoplay" 
+                  allowFullScreen
+                  className="absolute inset-0"
+                />
+              </div>
+            </div>
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 break-words">Интервью с руководителем компании</h2>
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-[var(--shadow-card)]">
+                <iframe 
+                  width="100%" 
+                  height="100%" 
+                  src="https://rutube.ru/play/embed/5b694f256d6c232712e7e2f7ee07cb1e/"
+                  style={{ border: 'none' }} 
+                  allow="clipboard-write; autoplay" 
+                  allowFullScreen
+                  className="absolute inset-0"
+                />
+              </div>
             </div>
           </div>
         </div>
