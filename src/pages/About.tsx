@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Building2, FileText, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import GrowthDashboard from "@/components/GrowthDashboard";
 
 const About = () => {
   const companyInfo = [
