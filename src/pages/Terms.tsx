@@ -14,8 +14,10 @@ const Terms = () => {
           </h1>
           
           <p className="text-lg sm:text-xl text-muted-foreground mb-12 break-words">
-            Утилитарные цифровые права, предоставляющие право на получение 1 кВт/ч электроэнергии 
-            за 1 (один) токен, либо 5,5 рубля за один токен при погашении деньгами.
+          <p className="text-lg sm:text-xl text-muted-foreground mb-12 break-words">
+            Утилитарные цифровые права, предоставляющие право на получение комплексной услуги 
+            по размещению и обеспечению работы вычислительного оборудования мощностью 1 кВт в течение 1 часа за 1 токен.
+          </p>
           </p>
 
           {/* GCP Model */}
@@ -27,17 +29,18 @@ const Terms = () => {
                 <FileText className="h-8 w-8 text-energy" />
               </div>
               <p className="text-muted-foreground mb-4 break-words">
-                УЦП предоставляют гибкие опции использования (денежный расчёт, товар, услуга). 
+                УЦП предоставляют право требования комплексной услуги по размещению вычислительного оборудования. 
+                Погашение осуществляется исключительно в натуральной форме — предоставлением инфраструктурных услуг.
                 Выпуск осуществляется через оператора инвестиционной платформы (ОИП).
               </p>
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">
                   <span className="text-energy mt-1">•</span>
-                  Гибкие сценарии погашения
+                  Погашение только в натуральной форме (электроэнергия и инфраструктура)
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-energy mt-1">•</span>
-                  Возможность денежного расчёта
+                  Денежное погашение не предусмотрено
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-energy mt-1">•</span>
@@ -45,7 +48,7 @@ const Terms = () => {
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-energy mt-1">•</span>
-                  Расширенные права приобретателя
+                  Право на полный цикл инфраструктурных услуг
                 </li>
               </ul>
             </Card>
