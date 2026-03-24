@@ -124,7 +124,7 @@ const Terms = () => {
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
                     <div className="text-sm text-muted-foreground mb-1">Цена за кВт·ч</div>
-                    <div className="text-2xl font-bold text-energy">3,85 ₽</div>
+                    <div className="text-2xl font-bold text-energy"><div className="text-2xl font-bold text-energy">4,20 ₽</div></div>
                   </div>
 
                   <div>
