@@ -1,5 +1,6 @@
 import { Card } from "@/components/ui/card";
-import { Building2 } from "lucide-react";
+import { Building2, FileText, Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const About = () => {
   const companyInfo = [
@@ -51,6 +52,27 @@ const About = () => {
                   </tbody>
                 </table>
               </div>
+            </Card>
+
+            {/* Отчетность */}
+            <Card className="p-8 bg-card border-border shadow-[var(--shadow-card)]">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-3 rounded-lg bg-energy/10">
+                  <FileText className="h-6 w-6 text-energy" />
+                </div>
+                <h2 className="text-2xl font-bold">Отчетность за 2025 год</h2>
+              </div>
+
+              <p className="text-muted-foreground mb-6">
+                Бухгалтерская отчётность ООО «ЭнергоТех» за 2025 год, включающая бухгалтерский баланс и отчёт о финансовых результатах.
+              </p>
+
+              <Button variant="energy" asChild>
+                <a href="/docs/bo-2025.pdf" target="_blank" rel="noopener noreferrer">
+                  <Download className="mr-2 h-4 w-4" />
+                  Скачать отчётность за 2025 год (PDF)
+                </a>
+              </Button>
             </Card>
           </div>
         </div>
