@@ -33,7 +33,7 @@ const Home = () => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight break-words">
-              Электроэнергия по УЦП за <span className="text-gradient">3,85 ₽/кВт·ч</span>
+              Электроэнергия по УЦП за <span className="text-gradient">4,20 ₽/кВт·ч</span>
             </h1>
             
             <p className="text-lg sm:text-xl md:text-2xl text-foreground/80 mb-8 break-words">
