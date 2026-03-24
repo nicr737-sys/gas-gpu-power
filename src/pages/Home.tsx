@@ -75,9 +75,9 @@ const Home = () => {
       {/* Video Section */}
       <section className="py-20 px-4 bg-card/30">
         <div className="container mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="flex flex-col gap-12 max-w-4xl mx-auto">
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 break-words">Состояние объекта на 20 декабря 2025 года</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6 break-words">Состояние объекта на 20 декабря 2025 года</h2>
               <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-[var(--shadow-card)]">
                 <iframe 
                   width="100%" 
@@ -91,7 +91,7 @@ const Home = () => {
               </div>
             </div>
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-center mb-6 break-words">Интервью с руководителем компании</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-center mb-6 break-words">Интервью с руководителем компании</h2>
               <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-[var(--shadow-card)]">
                 <iframe 
                   width="100%" 
