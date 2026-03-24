@@ -75,6 +75,7 @@ const About = () => {
                 </a>
               </Button>
             </Card>
+            <GrowthDashboard />
           </div>
         </div>
       </div>
